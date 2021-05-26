@@ -1,0 +1,24 @@
+{
+    "AssociateMembers" : [
+        {
+            "id":"1",
+            "name":"Dr. Umakant Sharma",
+            "memNo":"ISETF/2128/LM/101",
+            "position": ""
+        },
+        {
+            "id":"2",
+            "name":"Akhandjyoti Gupta",
+            "memNo":"ISETF/2128/LM/103",
+            "position": "Student",
+            "email": "gupta.akhandjyoti@gmai.com"
+        },
+        {
+            "id":"3",
+            "name":"Dr. Pankaj Tripathi",
+            "memNo":"ISETF/2128/LM/104",
+            "position": "Coordinator",
+            "email": "pankajtripathi24@gmail.com"
+        }
+    ]
+}	

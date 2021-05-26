@@ -1,0 +1,191 @@
+footer {
+    background-image: linear-gradient(180deg, #420468, #610997);
+    padding: 4rem 0 0 0;
+    color: #f3f3f3;
+    border-top: 5px solid var(--theme-yellow);
+
+    .banner { 
+        width: 60%;
+        margin-bottom: 1rem;
+        border: 3px solid #f3f3f3;
+    }
+    .contant-d {
+        display: grid;
+        grid-template-columns: 10% 90%;
+
+        .f-text {
+            transition-duration: 0.5s;
+        }
+        .f-text:hover { 
+            color: var(--theme-yellow);
+            transform: translateX(5px);
+        }
+    }
+
+    .center-fc {
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+            color: var(--theme-yellow);
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            transition-duration: 0.5s;
+            padding: 0.5rem 0;
+        }
+
+        a:hover { 
+            color: var(--theme-yellow);
+            transform: translateX(5px);
+        }
+    }
+
+    .payment {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            font-family: Montserrat-SemiBold;
+            width: 100%;
+        }
+    }
+
+    .social-m {
+        display: flex;
+        flex-direction: column;
+
+        .icons {
+            display: flex;
+            flex-direction: column;
+            place-content: space-evenly;
+            
+            a {
+                color: #fff;
+
+                svg {
+                    width: 30px;
+                    height: 30px;
+                    transition-duration: 0.3s;
+                    cursor: pointer;
+                }
+    
+                svg:hover {
+                    color: var(--theme-yellow);
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+
+            
+        }
+
+        h4 {
+            writing-mode: vertical-rl;
+            text-decoration: underline;
+            align-self: center;
+        } 
+    }
+    @media only screen and (max-width: 600px) {
+        .row {
+            text-align: center;
+        }
+
+        .row > div {
+            margin-bottom: 1.5rem;
+        }
+
+        .social-m {
+            display: flex;   
+            flex-direction: column-reverse;
+
+            .icons {
+                display: flex;
+                flex-direction: row;
+                place-content: space-evenly;
+            }
+
+            h4 {
+                writing-mode: horizontal-tb;
+                text-decoration: underline;
+                align-self: center;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 600px) {
+        .social-m {
+            display: flex;   
+            flex-direction: column!important;
+
+            .icons {
+                display: flex;
+                flex-direction: column;
+                place-content: space-evenly;
+            }
+
+            h4 {
+                writing-mode: vertical-rl;
+                text-decoration: underline;
+                align-self: center;
+            } 
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .social-m {
+            display: flex;   
+            flex-direction: row!important;
+
+            .icons {
+                display: flex;
+                flex-direction: column;
+                place-content: space-evenly;    
+            }
+
+            h4 {
+                writing-mode: vertical-rl;
+                text-decoration: underline;
+                align-self: center;
+            } 
+        }
+    }
+
+    @media only screen and (min-width: 1280) {
+        .social-m {
+            display: flex;   
+            flex-direction: row!important;
+
+            .icons {
+                display: flex;
+                flex-direction: column;
+                place-content: space-evenly;
+            }
+
+            h4 {
+                writing-mode: vertical-rl;
+                text-decoration: underline;
+                align-self: center;
+            } 
+        }
+    }
+
+    .contribution {
+        margin-top: 2rem;
+        background-color: #610997;
+        padding: 0.5rem 2rem;
+
+        div {
+            text-align: center;
+            
+            a { 
+                color: var(--theme-yellow);
+            }
+        }
+    }
+}

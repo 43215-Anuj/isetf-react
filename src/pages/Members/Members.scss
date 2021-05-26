@@ -1,0 +1,23 @@
+.l-section {
+    background-color: var(--theme-purple);
+    .container {
+        color: #fff;
+
+        .row > div {
+            padding: 0!important;
+            border: 1px solid #fff;
+            background-image: linear-gradient(135deg, transparent, transparent, #3c085c);
+            .m-wrapper {
+                padding: 0.5rem;
+
+                h4 {
+                    color: var(--theme-yellow);
+                }
+
+                p {
+                    font-family: Montserrat-MediumItalic;
+                }
+            }
+        }
+    }
+}

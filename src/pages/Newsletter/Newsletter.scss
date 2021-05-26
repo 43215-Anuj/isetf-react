@@ -1,0 +1,18 @@
+.research-card {
+    text-align: center;
+    background-color: var(--theme-yellow);
+    color: #616161;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    box-shadow: -0.3rem -0.3rem 0 0 var(--theme-orange);
+    p {
+        font-family: Montserrat-SemiBold;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: Montserrat-Bold;
+        color: var(--theme-purple);
+    }
+}

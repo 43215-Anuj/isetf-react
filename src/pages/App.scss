@@ -1,0 +1,123 @@
+:root {
+    --theme-yellow: #f1e207;
+    --theme-purple: #671E95;
+    --theme-orange: #F76F04;
+}
+
+@font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url(../assets/fonts/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-BoldItalic;
+    src: url(../assets/fonts/Montserrat-BoldItalic.ttf);
+  }
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../assets/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(../assets/fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../assets/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-MediumItalic;
+    src: url(../assets/fonts/Montserrat-MediumItalic.ttf);
+}
+
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(../assets/fonts/Montserrat-Light.ttf);
+}
+
+
+@font-face {
+    font-family: Montserrat-Thin;
+    src: url(../assets/fonts/Montserrat-Thin.ttf);
+}
+
+.sec-heading {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        position: relative;
+        width: fit-content;
+        color: var(--theme-purple);
+        font-family: Montserrat-Bold;
+        margin-bottom: 1.5rem;
+    }
+
+    h2:after {
+        background-image: linear-gradient(90deg, var(--theme-orange), var(--theme-yellow));
+        width: 50px;
+        height: 5px;
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -0.5rem;
+        margin-left: -25px;
+    }
+}
+
+h1 {
+    font-family: Montserrat-ExtraBold;
+}
+
+h2, h3 {
+    font-family: Montserrat-Bold;
+}
+
+h4 {
+    font-family: Montserrat-SemiBold;
+}
+
+h5, h6 {
+    font-family: Montserrat-Medium;
+}
+
+p, a {
+    font-family: Montserrat-Regular; 
+}
+
+.scroll-top-btn {
+    position: fixed; 
+    background-color: var(--theme-purple);
+    width: 2em!important;
+    height: 2em!important;
+    right: 3rem;
+    bottom: 40px;
+    z-index: 1;
+    cursor: pointer;
+    color: var(--theme-yellow);
+}
+
+@media only screen and (max-width: 600px) {
+    .scroll-top-btn {
+        width: 1em!important;
+        height: 1em!important;
+    }
+    
+}

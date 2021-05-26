@@ -1,0 +1,53 @@
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        font-family: Montserrat-Medium;
+        font-size: 14px;
+        text-decoration: none;
+        color: #ffffff!important;
+        padding: 0.5rem 1rem;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #E2CF7A!important;
+    }
+
+    .active {
+        text-decoration: none;
+        color: #E2CF7A!important;
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    a {
+        color: #ffffff!important;
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    a {
+        color: #E2CF7A;
+    }
+}
+
+.dropdown-menu {
+    background-color: var(--theme-purple)!important;    
+}
+
+.dropdown-item {
+    color: var(--theme-yellow)!important;
+}
+
+.dropdown-item:hover {
+    background-color: #a02ee7!important;
+}
+
+#donate-btn {
+    background-color: var(--theme-yellow);
+    color: var(--theme-purple)!important;
+    font-family: Montserrat-Bold;
+}

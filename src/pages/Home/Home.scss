@@ -1,0 +1,146 @@
+#home {
+    width: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: Montserrat-Bold;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.carousel-caption {
+    h3 {
+        color: #fff!important;
+        font-size: 50px!important;
+        font-family: Montserrat-Bold;
+        text-shadow: 0px 0px 11px #212529;
+    } 
+    p {
+        background-color: rgba(255, 255, 255, 0.541);
+        color: #272727!important;
+        font-size: 20px!important;
+        font-family: Montserrat-SemiBold;
+    }
+}
+
+#media-featured {
+    background-color: var(--theme-purple);
+
+    h2 {
+        color: var(--theme-yellow);
+    }
+}
+
+#about {
+    background-color: var(--theme-purple);
+    .about-text { 
+        border-radius: 10px;
+        padding: 1rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        transition-duration: 0.3s;
+
+        h2, p {
+            color: #fff
+        }
+    }
+
+    img {
+        position: relative;
+        border-radius: 10px;
+        border: 5px solid var(--theme-yellow);
+    }
+}
+
+#mission {
+
+    .mission-la, .mission-ra {
+        border: 1px solid var(--theme-yellow);
+        padding: 1rem;
+
+        svg {
+            background-color: var(--theme-yellow);
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+        }
+
+        h4 {
+            margin-top: 1rem;
+        }
+    }
+
+    .mission-la {
+        text-align: left;
+    }
+    .mission-ra {
+        text-align: right;
+    }
+}
+
+#glance {
+    background-color: #f8f8f8;
+    .glance-card {
+        border: 1px solid var(--theme-purple);
+        padding: 0.5rem;
+        min-height: 300px;
+
+        svg {
+            height: 100%;
+            width: 100%;
+            color: var(--theme-orange);
+        }
+
+        h4 {
+            padding: 10px 0;
+        }
+        .title {
+            display: grid;
+            grid-template-rows: 100%;
+            grid-template-columns: 20% 80%;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .glance-right {
+        text-align: right;
+    }
+}
+
+#stats {
+    background-image: url('../../assets/img/banners/counter_bg.jpg');
+    background-size: 100%;
+
+    .stat {
+        justify-content: center;
+        text-align: center;
+        background-color: #eee237;
+        padding: 1rem 0;
+        box-shadow: -0.5rem -0.5rem 0 0 var(--theme-orange);
+        margin: 0.5rem 0;
+
+        svg {
+            color: white;
+            padding: 0.5rem;
+            height: 70px;
+            width: 70px;
+        }
+
+        p.stat-number {
+            font-family: Montserrat-SemiBold;
+            font-size: 20px;
+        }
+        p.stat-desc {
+            font-family: Montserrat-Medium;
+            font-size: 16px;
+            color: var(--theme-purple);
+        }
+    }
+}

@@ -1,0 +1,399 @@
+{
+    "LifeMember":  [ 
+        {  
+            "id": "1",
+            "name": "Dr. Ashutosh Pandey",
+            "position":"Postdoctoral fellow",
+            "memNo" : "ISETF/2128/LM/100",
+            "aff": "Baylor College of Medicine, Houston, Texas, USA",
+            "email": "kangueane@gmail.com"
+        },
+        { 
+            "id":"2",
+            "name":"Dr.Nancy Jaiswal",
+            "memNo":"ISETF/2128/LM/101",
+            "position":"Phd Scholar",
+            "aff":"Centre of Biomedical Research",
+            "email":"nancycbmr@gmail.com"
+        },
+        { 
+            "id":"3",
+            "name":"Dr.Asheesh Kumar",
+            "memNo":"ISETF/2128/LM/102",
+            "position":"Senior Research Associate",
+            "aff":"University of Western Australia Business School",
+            "email":"asheeshku@gmail.com"
+        },
+        { 
+            "id":"4",
+            "name":"Dr.Manish Mishra",
+            "memNo":"ISETF/2128/LM/103",
+            "position":"Research Associate",
+            "aff":"Tufts University,Usa",
+            "email":"m.mishraiitr@gmail.com"
+        },
+        { 
+            "id":"5",
+            "name":"Mr.Umesh Kumar",
+            "memNo":"ISETF/2128/LM/104",
+            "position":"Ph.D.Scholar",
+            "aff":"CBMR,SGPGI,Lucknow",
+            "email":"Kumarumesh022@gmail.com"
+        },
+        { 
+            "id":"6",
+            "name":"Prof.A. Vaishampayan",
+            "memNo":"ISETF/2128/LM/105",
+            "position":"Emeritus Professor & Chairman",
+            "aff":"Institute of Agricultural Sciences,Banaras Hindu University",
+            "email":"vice.chairman.iqac.bhu@gmail.com"
+        },
+        { 
+            "id":"7",
+            "name":"Dr.Nishant Srivastava",
+            "memNo":"ISETF/2128/LM/106",
+            "position":"Head of Department",
+            "aff":"Department of Biotechnology,MIET,Meerut",
+            "email":"nishant.1412@gmail.com"
+        },
+        { 
+            "id":"8",
+            "name":"Dr. Gerald Veurink",
+            "memNo":"ISETF/2128/LM/107",
+            "position":"Senior Researcher",
+            "aff":"The University of Western Australia",
+            "email":"gveurink@westnet.com.au"
+        },
+        { 
+            "id":"9",
+            "name":"Dr. P. Kangueane",
+            "memNo":"ISETF/2128/LM/108",
+            "position":"Director",
+            "aff":"Biomedical Informatics (P)Ltd",
+            "email":"kangueane@gmail.com"
+        },
+        { 
+            "id":"10",
+            "name":"Dr. Priyesh Gandhi",
+            "memNo":"ISETF/2128/LM/109",
+            "position":"Principal",
+            "aff":"Sigma Institute of Engineering,Vadodara",
+            "email":"priyeshgandhi@gmail.com"
+        },
+        { 
+            "id":"11",
+            "name":"Dr.Sheshang Degadwala",
+            "memNo":"ISETF/2128/LM/110",
+            "position":"Assistant Professor",
+            "aff":"Sigma Institute of Engineering,Vadodara",
+            "email":"sheshang13@gmail.com"
+        },
+        { 
+            "id":"12",
+            "name":"Dr. Piyoosh Kumar Babele",
+            "memNo":"ISETF/2128/LM/111",
+            "position":"Research Scientists",
+            "aff":"Chemical and Molecular Engineering, Vanderbilt University,TN USA.",
+            "email":"bamboypb@gmail.com"
+        },
+        { 
+            "id":"13",
+            "name":"Manuel Katholnigg",
+            "memNo":"ISETF/2128/LM/112",
+            "position":"Student",
+            "aff":"Karlsruhe Institute of Technology, Karlsruhe (Bachelor)",
+            "email":"manuel.katholnigg@kit.enactus.de"
+        },
+        { 
+            "id":"14",
+            "name":"Dr. Anil Kumar Singh",
+            "memNo":"SMM Town PG College Ballia",
+            "position":"Assistant Professor",
+            "aff":"ISETF/2128/LM/113",
+            "email":"singhanil80@gmail.com"
+        },
+        { 
+            "id":"15",
+            "name":"Dr. Ajay Kumar Singh",
+            "memNo":"ISETF/2128/LM/114",
+            "position":"Principal Scientists & Head R&D,",
+            "aff":"A G Bio Systems Private Limited (DSIR recognized, Govt of India)",
+            "email":"drajay2009@gmail.com"
+        },
+        { 
+            "id":"16",
+            "name":"Dr. Alok Tripathi",
+            "memNo":"ISETF/2128/LM/115",
+            "position":"Assistant Professor",
+            "aff":"School of life Science & Technology, IIMT University, Meerut,U.P.",
+            "email":"aloktri08@gmail.com"
+        },
+        { 
+            "id":"17",
+            "name":"Dr. Amit Singh",
+            "memNo":"ISETF/2128/LM/116",
+            "position":"Senior Resident",
+            "aff":"Department of Microbiology, AIIMS,Bhopal.",
+            "email":"amit4us@gmail.com"
+        },
+        { 
+            "id":"18",
+            "name":"Dr. Abhishek Kumar Tiwari",
+            "memNo":"ISETF/2128/LM/117",
+            "position":"MD",
+            "aff":"Department of Microbiology,AIIMS,Bhopal",
+            "email":"amit4us@gmail.com"
+        },
+        { 
+            "id":"19",
+            "name":"Dr. Shivakant",
+            "memNo":"ISETF/2128/LM/118",
+            "position":"Postdoctoral Research Scientist",
+            "aff":"Beaumont Health, Royal Oak, Michigan,USA",
+            "email":"shiva.kant@beaumont.org"
+        },
+        { 
+            "id":"20",
+            "name":"Dr. Navneet Sharma",
+            "memNo":"ISETF/2128/LM/119",
+            "position":"Dean",
+            "aff":"School of Life Science & Technology, IIMT University Meerut",
+            "email":"dean_lifescience@iimtindia.net"
+        },
+        { 
+            "id":"21",
+            "name":"Dr. Surabhi Singhal",
+            "memNo":"ISETF/2128/LM/120",
+            "position":"Head of Department",
+            "aff":"School of Life Science & Technology, IIMT University Meerut",
+            "email":"hodbiotech@iimtindia.net"
+        },
+        { 
+            "id":"22",
+            "name":"Dr. Akhilesh Kumar Pandey",
+            "memNo":"ISETF/2128/LM/121",
+            "position":"Young Professional ll",
+            "aff":"Institute of Vegetable Research, Varanasi, India",
+            "email":"akppdy008@gmail.com"
+        },
+        { 
+            "id":"23",
+            "name":"Mr. Nikhil Gupta",
+            "memNo":"ISETF/2128/LM/122",
+            "position":"Phd Scholar",
+            "aff":"Centre of Biomedical Research,Lucknow",
+            "email":"nikhilgupta1532@gmail.com"
+        },
+        { 
+            "id":"24",
+            "name":"Dr. Dhiraj Kumar",
+            "memNo":"ISETF/2128/LM/123",
+            "position":"Assistant Professor",
+            "aff":"Rameshwar College B.R.A. Bihar University",
+            "email":"dhiraj.bhu2008@gmail.com"
+        },
+        { 
+            "id":"25",
+            "name":"Dr. Aastha Mishra",
+            "memNo":"ISETF/2128/LM/124",
+            "position":"DST Inspire Faculty",
+            "aff":"Department of Biotechnology, Jamia Milia Islamia,New Delhi",
+            "email":"aastha0602@gmail.com"
+        },
+        { 
+            "id":"26",
+            "name":"Dr. Sarvajeet Singh Gill",
+            "memNo":"ISETF/2128/LM/125",
+            "Position":"Professor",
+            "aff":"Centre for Biotechnology,Maharshi Dayanand University", 
+            "email":"ssgill14@mdurohtak.ac.in"
+        },
+        { 
+            "id":"27",
+            "name":"Abbu Zaid",
+            "memNo":"ISETF/2128/LM/126",
+            "position":"Research Scholar",
+            "aff":"Department of Botany, Aligarh Muslim University",
+            "email":"zaidabbu19@gmail.com"
+        },
+        { 
+            "id":"28",
+            "name":"Dr. Ratna Kumar Pasala",
+            "memNo":"ISETF/2128/LM/127",
+            "position":"Senior Scientist",
+            "aff":"ICAR- Indian Institute of Oilseeds Research(llOR)",
+            "email":"pratnakumar@gmail.com"
+        },
+        { 
+            "id":"29",
+            "name":"Dr. Sankalp Agarwal",
+            "memNo":"ISETF/2128/LM/128",
+            "position":"Biomaterial Scientist",
+            "aff":"Technology University Dublin",
+            "email":"sankalpjan8@gmail.com"
+        },
+        { 
+            "id":"30",
+            "name":"Ms. Poonam Sagar",
+            "memNo":"ISETF/2128/LM/129",
+            "position":"Ph.D.Scholar",
+            "aff":"National Agri-food Biotechnology Institute, Mohali",
+            "email":"poonam181995@gmail.com"
+        },
+        { 
+            "id":"31",
+            "name":"Dr. Vikas Kumar",
+            "memNo":"ISETF/2128/LM/130",
+            "position":"Postdoctoral Fellow",
+            "aff":"Beijing Computational Science Research Centre",
+            "email":"Kumarviks1984@gmail.com"
+        },
+        { 
+            "id":"32",
+            "name":"Mr. Sonia Sengar",
+            "memNo":"ISETF/2128/LM/131",
+            "position":"B.Sc. Student",
+            "aff":"Lovely Professional University",
+            "email":"soniasenger1610@gmail.com"
+        },
+        { 
+            "id":"33",
+            "name":"Dr. Vikas Agarwal",
+            "memNo":"ISETF/2128/LM/132",
+            "position":"Independent Writer and Editor",
+            "aff":"Banglore",
+            "email":"agarwalnimhans@gmail.com"
+        },
+        { 
+            "id":"34",
+            "name":"Dr. Amarish Kumar Yadav",
+            "memNo":"ISETF/2128/LM/133"
+        },
+        { 
+            "id":"35",
+            "name":"Mr. Ashish Pratap Singh",
+            "memNo":"ISETF/2128/LM/134",
+            "aff":"Bahraich,UP"
+        },
+        { 
+            "id":"36",
+            "name":"Dr. Mallick Gedda",
+            "memNo":"ISETF/2128/LM/135"
+        },
+        { 
+            "id":"37",
+            "name":"Dr. Saurabh Srivastav",
+            "memNo":"ISETF/2128/LM/136"
+        },
+        { 
+            "id":"38",
+            "name":"Bhuvnesh Rai",
+            "memNo":"ISETF/2128/LM/137",
+            "Position":"Student",
+            "aff":"SGPGI, Lucknow",
+            "email":"rai.bhuvnesh01@gmail.com"
+        },
+        { 
+            "id":"39",
+            "name":"Medha Srivastava",
+            "memNo":"ISETF/2128/LM/138",
+            "position":"Student",
+            "aff":"SGPGI, Lucknow",
+            "email":"medha.srivastava2@gmail.com"
+        },
+        { 
+            "id":"40",
+            "name":"Nickolai Vysokov",
+            "memNo":"ISETF/2128/LM/139",
+            "position":"Chief Executive Officer,Founder",
+            "aff":"BRAINPATCH,LTD.(Website:http://www.brainpatch.ai)",
+            "email":"nickolai@brainpatch.ai"
+        },
+        { 
+            "id":"41",
+            "name":"Dr. Durgesh Dubey",
+            "memNo":"ISETF/2128/LM/140",
+            "position":"Postdoc",
+            "aff":"CBMR,SGPGI, Lucknow",
+            "email":"durgeshcbmr@gmail.com"
+        },
+        { 
+            "id":"42",
+            "name":"Sachendra Pratap Singh",
+            "memNo":"ISETF/2128/LM/141",
+            "position":"Phd Scholar",
+            "aff":"CBMR,SGPGI, Lucknow",
+            "email":"singhsachendra189@gmail.com"
+        },
+        { 
+            "id":"43",
+            "name":"Dr. Chandan S",
+            "memNo":"ISETF/2128/LM/142",
+            "position":"Assistant Professor",
+            "aff":"School of Life Sciences,Department of Biotechnology and Bioinformatics,JSS Academy of Higher Education & Research, S.S Nagar,Mysuru-570 015 Karnataka, India.",
+            "email":"agarwalnimhans@gmail.com"
+        },
+        {
+            "id":"44",
+            "name":"Dr. Gopenath T S",
+            "memNo":"ISETF/2128/LM/143",
+            "position":"Associate Preofessor",
+            "aff":"School of Life Sciences, Department of Biotechnology and Bioinformatics JSS Academy of Higher Education & Research, S.S Nagar, Mysuru- 570 015 Karnataka, India.",
+            "email":"tgopenath@yahoo.com"
+        },
+        {
+            "id":"45",
+            "name":"Dr.Sudheer Sharma",
+            "memNo":"ISETF/2128/LM/144",
+            "position":"Doctor",
+            "aff":"Kanha nagar Colony kalli Pashchim Street Address Line 2: Sgpgi",
+            "email":"drsuprdctr88@gmail.com"
+        },
+        {
+            "id":"46",
+            "name":" Dr. Rakhi Agarwal",
+            "memNo":"ISETF/2128/LM/145",
+            "position":"Associate Professor",
+            "aff":"School of Forensic Science",
+            "email":"rakhi.agarwal@gfsu.edu.in"
+        },
+        {
+            "id":"47",
+            "name":"Mr.RAJEEV VERMA",
+            "memNo":"ISETF/2128/LM/146",
+            "position": "PhD Scholar CBMR SGPGI Lucknow",
+            "aff":"",
+            "email":"vermarajeev2790@gmail.com"
+        },
+        {
+            "id":"48",
+            "name":"Dr. Swati Sharma",
+            "memNo":"ISETF/2128/LM/147",
+            "position": "Scientist",
+            "aff":"All India Institute of Medical Science",
+            "email":"mail_swati84@yahoo.co.in"
+        },
+        {
+            "id":"49",
+            "name":"Dr.Mahendra Verma",
+            "memNo":"ISETF/2128/LM/148",
+            "position": "",
+            "aff":"",
+            "email":"mahendraverma1980@gmail.com"
+        },
+        {
+            "id":"50",
+            "name":"Dr. MUNENDRA TOMAR",
+            "memNo":"ISETF/2128/LM/149",
+            "position": "Postdocroral Fellow"
+        },
+        {
+            "id":"50",
+            "name":"Awani Pradhan",
+            "memNo":"ISETF/2128/LM/150",
+            "position": "PhD Scholar SGPGI",
+            "aff":"Lucknow",
+            "email":"avanipradhan2015@gmail.com"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+    .my-mail-form-component {
+        margin: 2rem 0;
+    }
+    
+    .alert-wrapper {
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .details {
+        position: relative;
+        
+            h3 {
+                color: var(--theme-purple);
+            }
+            .phone {
+                width: 100%;
+                padding: 2rem 0;
+            }
+
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    margin: 0.5rem 0;
+                    font-family: Montserrat-SemiBold;
+                }
+                input, input:focus, textarea, textarea:focus {
+                        width: 100%;
+                        border-radius: 5px;
+                        outline: none;
+                        padding: 10px;
+                        border: 1px solid #cacaca;
+                        font-family: Montserrat-Regular;
+                    }
+                } 
+                button {
+                    font-family: Montserrat-SemiBold;
+                    width: 100%;
+                } 
+        }
+    @media screen and (max-width: 600px) {
+        section {
+            height: 100%;
+            padding: 3rem 0;
+
+            .details {
+                text-align: center;
+            }
+        }
+    }
