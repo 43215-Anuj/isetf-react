@@ -153,8 +153,7 @@ const Home = () => {
                     <Col lg='7'>
                       <div className="about-text"
                         data-aos="fade-right"
-
-                        data-aos-duration="1000"
+                        data-aos-duration="800"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true"
                         data-aos-once="true"
@@ -166,7 +165,6 @@ const Home = () => {
                     <Col lg='5'>
                       <img src={event1} alt="lab" 
                         data-aos="fade-left"
-
                         data-aos-duration="800"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true"
@@ -185,8 +183,7 @@ const Home = () => {
                     <Col lg='6'>
                       <div className="mission-la"
                         data-aos="slide-left"
-
-                        data-aos-duration="1000"
+                        data-aos-duration="800"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true"
                         data-aos-once="true"
@@ -199,8 +196,7 @@ const Home = () => {
                     <Col lg='6'>
                       <div className="mission-ra"
                         data-aos="slide-right"
-
-                        data-aos-duration="1000"
+                        data-aos-duration="800"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true"
                         data-aos-once="true"
@@ -224,8 +220,7 @@ const Home = () => {
                     <Col lg="4" sm='12'>
                       <div className="glance-card" 
                         data-aos="slide-left"
-
-                        data-aos-duration="1000"
+                        data-aos-duration="800"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true"
                         data-aos-once="true"
@@ -241,8 +236,7 @@ const Home = () => {
                     <Col lg="4" sm='12'>
                       <div className="glance-card" 
                         data-aos="zoom-in"
-
-                        data-aos-duration="1000"
+                        data-aos-duration="800"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true"
                         data-aos-once="true"
@@ -258,8 +252,7 @@ const Home = () => {
                     <Col lg="4" sm='12'>
                       <div className="glance-card glance-right"
                         data-aos="slide-right"
-
-                        data-aos-duration="1000"
+                        data-aos-duration="800"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true"
                         data-aos-once="true"
@@ -281,8 +274,7 @@ const Home = () => {
                     <Col lg='3'>
                       <div className="stat" 
                         data-aos="zoom-in-left"
-
-                        data-aos-duration="1000"
+                        data-aos-duration="800"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true"
                         data-aos-once="true"
@@ -295,8 +287,7 @@ const Home = () => {
                     <Col lg='3'>
                       <div className="stat"
                         data-aos="zoom-in"
-
-                        data-aos-duration="1000"
+                        data-aos-duration="800"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true"
                         data-aos-once="true"
@@ -309,8 +300,7 @@ const Home = () => {
                     <Col lg='3'>
                       <div className="stat"
                         data-aos="zoom-in"
-
-                        data-aos-duration="1000"
+                        data-aos-duration="800"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true"
                         data-aos-once="true"
@@ -323,8 +313,7 @@ const Home = () => {
                     <Col lg='3'>
                       <div className="stat"
                         data-aos="zoom-in-right"
-
-                        data-aos-duration="1000"
+                        data-aos-duration="800"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true"
                         data-aos-once="true"
@@ -351,8 +340,7 @@ const Home = () => {
                         data-show-facepile="true"
                         
                         data-aos="fade-left"
-
-                        data-aos-duration="1000"
+                        data-aos-duration="800"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true"
                         data-aos-once="true"
@@ -365,8 +353,8 @@ const Home = () => {
                       </div>
                     </Col>
                     <Col lg='8' sm='12'>
-                      <div data-aos="fade-right"
-                      data-aos-duration="1000"
+                      <div data-aos="fade-ight"
+                      data-aos-duration="800"
                       data-aos-easing="ease-in-out"
                       data-aos-mirror="true"
                       data-aos-once="true"
