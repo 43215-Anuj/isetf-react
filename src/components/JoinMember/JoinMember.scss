@@ -1,0 +1,81 @@
+.nav-options {
+  justify-content: center;
+  padding-top: 1rem;
+
+  .nav-item {
+    cursor: pointer;
+  }
+
+  .nav-link {
+    color: var(--theme-purple)!important;
+  }
+}
+
+.tab-content {
+  padding: 2rem 0 4rem 0;
+
+  h2 {
+    text-align: center;
+  }
+  form {
+    font-family: Montserrat-Regular;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    input,
+    textarea,
+    select {
+      border: 2px solid lightgrey;
+      padding: 1rem 0.5rem;
+      border-radius: 0.8rem;
+      width: 600px;
+      margin: 0.5rem 0;
+      color: var(--theme-purple);
+      align-self: center;
+    }
+
+    input:focus,
+    input:active,
+    textarea:focus,
+    textarea:active,
+    select:focus,
+    select:active {
+      outline: none;
+    } 
+
+    button {
+      width: 250px;
+      align-self: center;
+    }
+
+    .hear-about-us {
+      width: 600px;
+      text-align: left;
+      align-self: center;
+      margin: 0.5rem 0;
+      
+      p {
+        font-family: Montserrat-SemiBold;
+      }
+
+      input {
+        width: min-content;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.note {
+  width: 600px;
+  align-self: center;
+  background-color: rgb(255, 119, 119);
+  color: white;
+  border-radius: 1rem;
+  border: 1px solid red;
+  text-align: left;
+  padding: 1rem;
+  margin: 1rem 0;
+}

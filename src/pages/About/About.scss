@@ -1,3 +1,8 @@
+.about-page {
+    width: 100%;
+    overflow: hidden;
+}
+
 .ab-cards {
     padding: 3rem 0 0 0;
     .ab-card {
@@ -18,7 +23,6 @@
     .ab-card:hover {
         border: 2px solid var(--theme-purple);
     }
-
 }
 
 #obj {
