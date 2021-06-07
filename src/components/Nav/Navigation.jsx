@@ -79,7 +79,13 @@ const Navigation = () => {
                   VOLUNTEER
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>JOIN AS VOLUNTEER</DropdownItem>
+                  <DropdownItem
+                    tag={Link}
+                    onClick={() => setIsOpen(!isOpen)}
+                    to="/application_form"
+                  >
+                    JOIN AS VOLUNTEER
+                  </DropdownItem>
                   <DropdownItem
                     tag={Link}
                     onClick={() => setIsOpen(!isOpen)}
@@ -94,7 +100,13 @@ const Navigation = () => {
                   MEMBERS
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>JOIN AS MEMBERS</DropdownItem>
+                  <DropdownItem
+                    tag={Link}
+                    onClick={() => setIsOpen(!isOpen)}
+                    to="/application_form"
+                  >
+                    JOIN AS MEMBERS
+                  </DropdownItem>
                   <DropdownItem
                     tag={Link}
                     onClick={() => setIsOpen(!isOpen)}

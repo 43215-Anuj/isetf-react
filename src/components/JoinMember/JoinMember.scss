@@ -7,7 +7,7 @@
   }
 
   .nav-link {
-    color: var(--theme-purple)!important;
+    color: var(--theme-purple) !important;
   }
 }
 
@@ -24,13 +24,17 @@
     justify-content: center;
     text-align: center;
 
+    .checkbox {
+      width: min-content;
+    }
+
     input,
     textarea,
     select {
       border: 2px solid lightgrey;
       padding: 1rem 0.5rem;
       border-radius: 0.8rem;
-      width: 600px;
+      width: 100%;
       margin: 0.5rem 0;
       color: var(--theme-purple);
       align-self: center;
@@ -43,19 +47,19 @@
     select:focus,
     select:active {
       outline: none;
-    } 
+    }
 
     button {
       width: 250px;
       align-self: center;
     }
 
-    .hear-about-us {
-      width: 600px;
+    .input-wrapper {
+      width: 100%;
       text-align: left;
       align-self: center;
       margin: 0.5rem 0;
-      
+
       p {
         font-family: Montserrat-SemiBold;
       }
@@ -69,7 +73,7 @@
 }
 
 .note {
-  width: 600px;
+  width: 100%;
   align-self: center;
   background-color: rgb(255, 119, 119);
   color: white;
@@ -78,4 +82,27 @@
   text-align: left;
   padding: 1rem;
   margin: 1rem 0;
+
+  strong {
+    color: #70281d
+  };
+}
+
+@media only screen and (min-width: 768px) {
+  .tab-content {
+    form {
+      input,
+      textarea,
+      select {
+        width: 50%;
+      }
+      .input-wrapper {
+        width: 50%;
+      }
+    }
+  }
+
+  .note {
+    width: 100%;
+  }
 }
