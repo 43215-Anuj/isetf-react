@@ -14,7 +14,7 @@ import emailjs from "emailjs-com";
 import classnames from "classnames";
 import "./JoinMember.scss";
 import Footer from "../Footer/Footer";
-import JotformEmbed from 'react-jotform-embed';
+import JotformEmbed from "react-jotform-embed";
 
 const JoinMember = () => {
   const [activeTab, setActiveTab] = useState("1");
@@ -26,7 +26,7 @@ const JoinMember = () => {
     from_name: "",
     from_email: "",
     subject: "",
-    message: ""
+    message: "",
   });
 
   const volHandleSubmit = (e) => {
@@ -237,7 +237,7 @@ const JoinMember = () => {
           <Container>
             <Row>
               <Col sm="12" lg="12">
-              <JotformEmbed src="https://form.jotform.com/211565626531454" />
+                <JotformEmbed src="https://form.jotform.com/211565626531454" scrolling={true} />
                 <div className="note input-wrapper">
                   <p>
                     <strong>Detail of payment of membership fee:</strong>
