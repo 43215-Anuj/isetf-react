@@ -237,7 +237,7 @@ const JoinMember = () => {
           <Container>
             <Row>
               <Col sm="12" lg="12">
-                <JotformEmbed src="https://form.jotform.com/211565626531454" scrolling={true} />
+                <JotformEmbed src="https://form.jotform.com/211565626531454" />
                 <div className="note input-wrapper">
                   <p>
                     <strong>Detail of payment of membership fee:</strong>
