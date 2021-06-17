@@ -83,10 +83,7 @@ const Navigation = () => {
                     tag={Link}
                     onClick={() => setIsOpen(!isOpen)}
                     to={{
-                      pathname: "/application_form",
-                      state: {
-                        propsActiveTab: "1",
-                      },
+                      pathname: "/volunteer_form"
                     }}
                   >
                     JOIN AS VOLUNTEER
@@ -109,10 +106,7 @@ const Navigation = () => {
                     tag={Link}
                     onClick={() => setIsOpen(!isOpen)}
                     to={{
-                      pathname: "/application_form",
-                      state: {
-                        propsActiveTab: "2",
-                      },
+                      pathname: "/member_form"
                     }}
                   >
                     JOIN AS MEMBERS

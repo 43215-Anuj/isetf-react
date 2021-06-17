@@ -18,7 +18,9 @@ import Collab from './Collab/Collaborators';
 import MediaFeatured from './Media/Media';
 import Donate from './Donate/Donate';
 import Research from './Newsletter/Research';
+import JoinVolunteer from '../components/JoinMember/JoinVolunteer';
 import JoinMember from '../components/JoinMember/JoinMember';
+
 
 import jsonData from '../data/data.json';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
@@ -75,7 +77,9 @@ function App() {
             <Route path="/members/associate" component={AssociateMembers} />
             <Route path="/newsletter/research_activity" component={Research} />
             <Route path="/collaborators" component={Collab} />
-            <Route path="/application_form" component={JoinMember} />
+            <Route path="/member_form" component={JoinMember} />
+            <Route path="/volunteer_form" component={JoinVolunteer} />
+
             <Route path="/donate" component={Donate} />
             <Route path="/members/life" component={LifeMembers} />
            </Switch>

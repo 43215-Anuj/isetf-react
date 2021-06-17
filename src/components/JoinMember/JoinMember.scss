@@ -11,63 +11,59 @@
   }
 }
 
-.tab-content {
-  padding: 2rem 0 4rem 0;
+h2 {
+  text-align: center;
+}
+form {
+  font-family: Montserrat-Regular;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 
-  h2 {
-    text-align: center;
+  .checkbox {
+    width: min-content;
   }
-  form {
-    font-family: Montserrat-Regular;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
 
-    .checkbox {
+  input,
+  textarea,
+  select {
+    border: 2px solid lightgrey;
+    padding: 1rem 0.5rem;
+    border-radius: 0.8rem;
+    width: 100%;
+    margin: 0.5rem 0;
+    color: var(--theme-purple);
+    align-self: center;
+  }
+
+  input:focus,
+  input:active,
+  textarea:focus,
+  textarea:active,
+  select:focus,
+  select:active {
+    outline: none;
+  }
+
+  button {
+    width: 250px;
+    align-self: center;
+  }
+
+  .input-wrapper {
+    width: 100%;
+    text-align: left;
+    align-self: center;
+    margin: 0.5rem 0;
+
+    p {
+      font-family: Montserrat-SemiBold;
+    }
+
+    input {
       width: min-content;
-    }
-
-    input,
-    textarea,
-    select {
-      border: 2px solid lightgrey;
-      padding: 1rem 0.5rem;
-      border-radius: 0.8rem;
-      width: 100%;
-      margin: 0.5rem 0;
-      color: var(--theme-purple);
-      align-self: center;
-    }
-
-    input:focus,
-    input:active,
-    textarea:focus,
-    textarea:active,
-    select:focus,
-    select:active {
-      outline: none;
-    }
-
-    button {
-      width: 250px;
-      align-self: center;
-    }
-
-    .input-wrapper {
-      width: 100%;
-      text-align: left;
-      align-self: center;
-      margin: 0.5rem 0;
-
-      p {
-        font-family: Montserrat-SemiBold;
-      }
-
-      input {
-        width: min-content;
-        margin-right: 1rem;
-      }
+      margin-right: 1rem;
     }
   }
 }
@@ -84,21 +80,19 @@
   margin: 1rem 0;
 
   strong {
-    color: #70281d
-  };
+    color: #70281d;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-  .tab-content {
-    form {
-      input,
-      textarea,
-      select {
-        width: 50%;
-      }
-      .input-wrapper {
-        width: 50%;
-      }
+  form {
+    input,
+    textarea,
+    select {
+      width: 50%;
+    }
+    .input-wrapper {
+      width: 50%;
     }
   }
 
