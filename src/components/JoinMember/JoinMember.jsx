@@ -361,7 +361,6 @@ const JoinMember = () => {
                 <iframe
                   id="JotFormIFrame-211565626531454"
                   title="ISETF Membership form"
-                  onLoad={window.parent.scrollTo(0,0)}
                   allowtransparency="true"
                   allowFullScreen={true}
                   allow="geolocation; microphone; camera"
