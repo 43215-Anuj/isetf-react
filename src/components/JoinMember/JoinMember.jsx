@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   TabContent,
   TabPane,
@@ -14,7 +14,6 @@ import emailjs from "emailjs-com";
 import classnames from "classnames";
 import "./JoinMember.scss";
 import Footer from "../Footer/Footer";
-import JotformEmbed from "react-jotform-embed";
 
 const JoinMember = () => {
   const [activeTab, setActiveTab] = useState("1");
@@ -80,6 +79,128 @@ const JoinMember = () => {
       ...userDetails,
       [field]: e.target.value,
     });
+  };
+
+  useEffect(() => {
+    if (window.addEventListener) {
+      window.addEventListener("message", handleIFrameMessage, false);
+    } else if (window.attachEvent) {
+      window.attachEvent("onmessage", handleIFrameMessage);
+    }
+  });
+
+  let ifr = document.getElementById("JotFormIFrame-211565626531454");
+  let iframe = undefined;
+  if (ifr) {
+    let src = ifr.src;
+    let iframeParams = [];
+    if (window.location.href && window.location.href.indexOf("?") > -1) {
+      iframeParams = iframeParams.concat(
+        window.location.href
+          .substr(window.location.href.indexOf("?") + 1)
+          .split("&")
+      );
+    }
+    if (src && src.indexOf("?") > -1) {
+      iframeParams = iframeParams.concat(
+        src.substr(src.indexOf("?") + 1).split("&")
+      );
+      src = src.substr(0, src.indexOf("?"));
+    }
+    iframeParams.push("isIframeEmbed=1");
+    ifr.src = src + "?" + iframeParams.join("&");
+  }
+
+  window.isPermitted = (originUrl, whitelisted_domains) => {
+    let url = document.createElement("a");
+    url.href = originUrl;
+    let hostname = url.hostname;
+    let result = false;
+    if (typeof hostname !== "undefined") {
+      whitelisted_domains.forEach(function (element) {
+        if (
+          hostname.slice(-1 * element.length - 1) === ".".concat(element) ||
+          hostname === element
+        ) {
+          result = true;
+        }
+      });
+      return result;
+    }
+  };
+
+  const handleIFrameMessage = (e) => {
+    if (typeof e.data === "object") {
+      return;
+    }
+    let args = e.data.split(":");
+    if (args.length > 2) {
+      iframe = document.getElementById(
+        "JotFormIFrame-" + args[args.length - 1]
+      );
+    } else {
+      iframe = document.getElementById("JotFormIFrame");
+    }
+    if (!iframe) {
+      return;
+    }
+    switch (args[0]) {
+      case "scrollIntoView":
+        iframe.scrollIntoView();
+        break;
+      case "setHeight":
+        iframe.style.height = args[1] + "px";
+        break;
+      case "collapseErrorPage":
+        if (iframe.clientHeight > window.innerHeight) {
+          iframe.style.height = window.innerHeight + "px";
+        }
+        break;
+      case "reloadPage":
+        window.location.reload();
+        break;
+      case "loadScript":
+        if (!window.isPermitted(e.origin, ["jotform.com", "jotform.pro"])) {
+          break;
+        }
+        let src = args[1];
+        if (args.length > 3) {
+          src = args[1] + ":" + args[2];
+        }
+        let script = document.createElement("script");
+        script.src = src;
+        script.type = "text/javascript";
+        document.body.appendChild(script);
+        break;
+      case "exitFullscreen":
+        if (window.document.exitFullscreen) window.document.exitFullscreen();
+        else if (window.document.mozCancelFullScreen)
+          window.document.mozCancelFullScreen();
+        else if (window.document.mozCancelFullscreen)
+          window.document.mozCancelFullScreen();
+        else if (window.document.webkitExitFullscreen)
+          window.document.webkitExitFullscreen();
+        else if (window.document.msExitFullscreen)
+          window.document.msExitFullscreen();
+        break;
+        default: break;
+    }
+
+    let isJotForm = e.origin.indexOf("jotform") > -1 ? true : false;
+    if (
+      isJotForm &&
+      "contentWindow" in iframe &&
+      "postMessage" in iframe.contentWindow
+    ) {
+      let urls = {
+        docurl: encodeURIComponent(document.URL),
+        referrer: encodeURIComponent(document.referrer),
+      };
+      iframe.contentWindow.postMessage(
+        JSON.stringify({ type: "urls", value: urls }),
+        "*"
+      );
+    }
   };
 
   return (
@@ -237,7 +358,22 @@ const JoinMember = () => {
           <Container>
             <Row>
               <Col sm="12" lg="12">
-                <JotformEmbed src="https://form.jotform.com/211565626531454" scrolling={true} />
+                <iframe
+                  id="JotFormIFrame-211565626531454"
+                  title="ISETF Membership form"
+                  onload="window.parent.scrollTo(0,0)"
+                  allowtransparency="true"
+                  allowfullscreen="true"
+                  allow="geolocation; microphone; camera"
+                  src="https://form.jotform.com/211565626531454"
+                  frameborder="0"
+                  style={{
+                    minWidth: "100%",
+                    height:"539px",
+                    border:"none",
+                  }}
+                ></iframe>
+
                 <div className="note input-wrapper">
                   <p>
                     <strong>Detail of payment of membership fee:</strong>
@@ -256,7 +392,7 @@ const JoinMember = () => {
                     <br />
                     <br />
                     <strong>Account Name: </strong>Indian Scientific Education
-                    and Technology
+                    and Technology Foundation
                     <br />
                     <strong>Foundation A/c No.: </strong>415501010125187
                     <br />
@@ -270,7 +406,8 @@ const JoinMember = () => {
                     <strong>BHIM APP: </strong> 7985077353@upi
                     <br />
                     <span style={{ background: "yellow", color: "black" }}>
-                      Your Membership will be completed once you pay the
+                      Your Membership will be completed and you will get
+                      membership certificate with number once you pay the
                       membership fee.
                     </span>
                   </p>
