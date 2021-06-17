@@ -465,10 +465,7 @@ const Home = () => {
             </p>
             <Link
               to={{
-                pathname: "/application_form",
-                state: {
-                  propsActiveTab: "2",
-                },
+                pathname: "/member_form"
               }}
             >
               <Button
