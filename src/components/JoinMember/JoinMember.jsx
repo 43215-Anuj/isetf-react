@@ -87,7 +87,7 @@ const JoinMember = () => {
     } else if (window.attachEvent) {
       window.attachEvent("onmessage", handleIFrameMessage);
     }
-  });
+  }, [props.activeTab]);
 
   let ifr = document.getElementById("JotFormIFrame-211565626531454");
   let iframe = undefined;
@@ -361,12 +361,12 @@ const JoinMember = () => {
                 <iframe
                   id="JotFormIFrame-211565626531454"
                   title="ISETF Membership form"
-                  onload="window.parent.scrollTo(0,0)"
+                  onLoad={window.parent.scrollTo(0,0)}
                   allowtransparency="true"
-                  allowfullscreen="true"
+                  allowFullScreen={true}
                   allow="geolocation; microphone; camera"
                   src="https://form.jotform.com/211565626531454"
-                  frameborder="0"
+                  frameBorder="0"
                   style={{
                     minWidth: "100%",
                     height:"539px",
