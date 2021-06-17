@@ -87,7 +87,7 @@ const JoinMember = () => {
     } else if (window.attachEvent) {
       window.attachEvent("onmessage", handleIFrameMessage);
     }
-  }, [props.activeTab]);
+  });
 
   let ifr = document.getElementById("JotFormIFrame-211565626531454");
   let iframe = undefined;
