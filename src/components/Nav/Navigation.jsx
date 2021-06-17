@@ -82,7 +82,12 @@ const Navigation = () => {
                   <DropdownItem
                     tag={Link}
                     onClick={() => setIsOpen(!isOpen)}
-                    to="/application_form"
+                    to={{
+                      pathname: "/application_form",
+                      state: {
+                        propsActiveTab: "1",
+                      },
+                    }}
                   >
                     JOIN AS VOLUNTEER
                   </DropdownItem>
@@ -103,7 +108,12 @@ const Navigation = () => {
                   <DropdownItem
                     tag={Link}
                     onClick={() => setIsOpen(!isOpen)}
-                    to="/application_form"
+                    to={{
+                      pathname: "/application_form",
+                      state: {
+                        propsActiveTab: "2",
+                      },
+                    }}
                   >
                     JOIN AS MEMBERS
                   </DropdownItem>

@@ -14,7 +14,7 @@ import {
   Button,
 } from "reactstrap";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import FormComponent from "../../components/Contact/Form";
 import Footer from "../../components/Footer/Footer";
@@ -463,7 +463,14 @@ const Home = () => {
               resources to make positive difference in the science education of
               students and society. Come, be an ISET Foundation member.
             </p>
-            <Link to="/application_form">
+            <Link
+              to={{
+                pathname: "/application_form",
+                state: {
+                  propsActiveTab: "2",
+                },
+              }}
+            >
               <Button
                 color="info"
                 style={{ fontFamily: "Montserrat-SemiBold", color: "#fff" }}

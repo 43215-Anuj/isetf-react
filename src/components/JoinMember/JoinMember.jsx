@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import {
   TabContent,
   TabPane,
@@ -10,12 +10,17 @@ import {
   Col,
   Container,
 } from "reactstrap";
+import { useLocation } from "react-router-dom";
 import emailjs from "emailjs-com";
 import classnames from "classnames";
 import "./JoinMember.scss";
 import Footer from "../Footer/Footer";
 
 const JoinMember = () => {
+  const location = useLocation();
+  let iframe = useRef(null);
+
+  const { propsActiveTab } = location.state;
   const [activeTab, setActiveTab] = useState("1");
   const toggle = (tab) => {
     if (activeTab !== tab) setActiveTab(tab);
@@ -27,6 +32,116 @@ const JoinMember = () => {
     subject: "",
     message: "",
   });
+
+  const handleIFrameMessage = useCallback((e) => {
+    if (typeof e.data === "object") {
+      return;
+    }
+    let args = e.data.split(":");
+    if (args.length > 2) {
+      iframe.current = document.getElementById(
+        "JotFormIFrame-" + args[args.length - 1]
+      );
+    } else {
+      iframe.current = document.getElementById("JotFormIFrame");
+    }
+    if (!iframe.current) {
+      return;
+    }
+    switch (args[0]) {
+      case "scrollIntoView":
+        iframe.current.scrollIntoView();
+        break;
+      case "setHeight":
+        iframe.current.style.height = args[1] + "px";
+        break;
+      case "collapseErrorPage":
+        if (iframe.current.clientHeight > window.innerHeight) {
+          iframe.current.style.height = window.innerHeight + "px";
+        }
+        break;
+      case "reloadPage":
+        window.location.reload();
+        break;
+      case "loadScript":
+        if (!window.isPermitted(e.origin, ["jotform.com", "jotform.pro"])) {
+          break;
+        }
+        let src = args[1];
+        if (args.length > 3) {
+          src = args[1] + ":" + args[2];
+        }
+        let script = document.createElement("script");
+        script.src = src;
+        script.type = "text/javascript";
+        document.body.appendChild(script);
+        break;
+      case "exitFullscreen":
+        if (window.document.exitFullscreen) window.document.exitFullscreen();
+        else if (window.document.mozCancelFullScreen)
+          window.document.mozCancelFullScreen();
+        else if (window.document.mozCancelFullscreen)
+          window.document.mozCancelFullScreen();
+        else if (window.document.webkitExitFullscreen)
+          window.document.webkitExitFullscreen();
+        else if (window.document.msExitFullscreen)
+          window.document.msExitFullscreen();
+        break;
+      default:
+        break;
+    }
+
+    let isJotForm = e.origin.indexOf("jotform") > -1 ? true : false;
+    if (
+      isJotForm &&
+      "contentWindow" in iframe &&
+      "postMessage" in iframe.contentWindow
+    ) {
+      let urls = {
+        docurl: encodeURIComponent(document.URL),
+        referrer: encodeURIComponent(document.referrer),
+      };
+      iframe.contentWindow.postMessage(
+        JSON.stringify({ type: "urls", value: urls }),
+        "*"
+      );
+    }
+  }, []);
+
+  useEffect(() => {
+    propsActiveTab && setActiveTab(propsActiveTab);
+
+    let ifr = document.getElementById("JotFormIFrame-211565626531454");
+    if (ifr) {
+      let src = ifr.src;
+      let iframeParams = [];
+      if (window.location.href && window.location.href.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(
+          window.location.href
+            .substr(window.location.href.indexOf("?") + 1)
+            .split("&")
+        );
+      }
+      if (src && src.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(
+          src.substr(src.indexOf("?") + 1).split("&")
+        );
+        src = src.substr(0, src.indexOf("?"));
+      }
+      iframeParams.push("isIframeEmbed=1");
+      ifr.src = src + "?" + iframeParams.join("&");
+    }
+
+    if (window.addEventListener) {
+      window.addEventListener("message", handleIFrameMessage, false);
+    } else if (window.attachEvent) {
+      window.attachEvent("onmessage", handleIFrameMessage);
+    }
+
+    return () => {
+      window.removeEventListener("message", handleIFrameMessage);
+    };
+  }, [propsActiveTab, handleIFrameMessage]);
 
   const volHandleSubmit = (e) => {
     e.preventDefault();
@@ -81,36 +196,6 @@ const JoinMember = () => {
     });
   };
 
-  useEffect(() => {
-    if (window.addEventListener) {
-      window.addEventListener("message", handleIFrameMessage, false);
-    } else if (window.attachEvent) {
-      window.attachEvent("onmessage", handleIFrameMessage);
-    }
-  });
-
-  let ifr = document.getElementById("JotFormIFrame-211565626531454");
-  let iframe = undefined;
-  if (ifr) {
-    let src = ifr.src;
-    let iframeParams = [];
-    if (window.location.href && window.location.href.indexOf("?") > -1) {
-      iframeParams = iframeParams.concat(
-        window.location.href
-          .substr(window.location.href.indexOf("?") + 1)
-          .split("&")
-      );
-    }
-    if (src && src.indexOf("?") > -1) {
-      iframeParams = iframeParams.concat(
-        src.substr(src.indexOf("?") + 1).split("&")
-      );
-      src = src.substr(0, src.indexOf("?"));
-    }
-    iframeParams.push("isIframeEmbed=1");
-    ifr.src = src + "?" + iframeParams.join("&");
-  }
-
   window.isPermitted = (originUrl, whitelisted_domains) => {
     let url = document.createElement("a");
     url.href = originUrl;
@@ -126,80 +211,6 @@ const JoinMember = () => {
         }
       });
       return result;
-    }
-  };
-
-  const handleIFrameMessage = (e) => {
-    if (typeof e.data === "object") {
-      return;
-    }
-    let args = e.data.split(":");
-    if (args.length > 2) {
-      iframe = document.getElementById(
-        "JotFormIFrame-" + args[args.length - 1]
-      );
-    } else {
-      iframe = document.getElementById("JotFormIFrame");
-    }
-    if (!iframe) {
-      return;
-    }
-    switch (args[0]) {
-      case "scrollIntoView":
-        iframe.scrollIntoView();
-        break;
-      case "setHeight":
-        iframe.style.height = args[1] + "px";
-        break;
-      case "collapseErrorPage":
-        if (iframe.clientHeight > window.innerHeight) {
-          iframe.style.height = window.innerHeight + "px";
-        }
-        break;
-      case "reloadPage":
-        window.location.reload();
-        break;
-      case "loadScript":
-        if (!window.isPermitted(e.origin, ["jotform.com", "jotform.pro"])) {
-          break;
-        }
-        let src = args[1];
-        if (args.length > 3) {
-          src = args[1] + ":" + args[2];
-        }
-        let script = document.createElement("script");
-        script.src = src;
-        script.type = "text/javascript";
-        document.body.appendChild(script);
-        break;
-      case "exitFullscreen":
-        if (window.document.exitFullscreen) window.document.exitFullscreen();
-        else if (window.document.mozCancelFullScreen)
-          window.document.mozCancelFullScreen();
-        else if (window.document.mozCancelFullscreen)
-          window.document.mozCancelFullScreen();
-        else if (window.document.webkitExitFullscreen)
-          window.document.webkitExitFullscreen();
-        else if (window.document.msExitFullscreen)
-          window.document.msExitFullscreen();
-        break;
-        default: break;
-    }
-
-    let isJotForm = e.origin.indexOf("jotform") > -1 ? true : false;
-    if (
-      isJotForm &&
-      "contentWindow" in iframe &&
-      "postMessage" in iframe.contentWindow
-    ) {
-      let urls = {
-        docurl: encodeURIComponent(document.URL),
-        referrer: encodeURIComponent(document.referrer),
-      };
-      iframe.contentWindow.postMessage(
-        JSON.stringify({ type: "urls", value: urls }),
-        "*"
-      );
     }
   };
 
@@ -368,8 +379,8 @@ const JoinMember = () => {
                   frameBorder="0"
                   style={{
                     minWidth: "100%",
-                    height:"539px",
-                    border:"none",
+                    height: "539px",
+                    border: "none",
                   }}
                 ></iframe>
 
