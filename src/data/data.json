@@ -354,6 +354,16 @@
             ]
         },
         {
+            "id": "25",
+            "class": "odd",
+            "name": "Mr. Darsanam Surender",
+            "imgSrc": "darsanam",
+            "desg": "",
+            "desc": [
+                "Masters in Biotechnology having 20 years professional experience with multi-national organizations middle and senior management roles Sales and Marketing in various sectors like pharmaceutical, medical device, and equipment, from last four years, using information technology for the detection of the non-communicable diseases like underlying rate and rhythm problems in the low-resource healthcare settings across South-Asia and South-East Asia."
+            ]
+        },
+        {
             "id": "16",
             "class": "even",
             "name": "Dr. Anil Kumar Singh",
