@@ -56,8 +56,8 @@ const Donate = () => {
       key: "rzp_live_7fMusYCe19ElGf",
       currency: data.currency,
       amount: data.amount,
-      name: "Learn Code Online",
-      description: "Wallet Transaction",
+      name: "ISET Foundation",
+      description: "Each donation matters to us",
       image: {logo},
     //   order_id: data.id,
       handler: function (response) {
@@ -132,7 +132,7 @@ const Donate = () => {
             </div>
             <hr className="my-2" />
             <p className="lead">
-              OR - Donate through our payment Our Payment Gateway
+              OR - Donate through Our Payment Gateway
             </p>
             <p>Pick from mostly used options by our donars</p>
             <div className="amount">
