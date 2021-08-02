@@ -180,6 +180,16 @@ footer {
         background-color: #610997;
         padding: 0.5rem 2rem;
 
+        .tnc {
+            a {
+                text-decoration: none;
+                margin: 0 5px;
+                font-size: 12px;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
         div {
             text-align: center;
             

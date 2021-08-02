@@ -20,9 +20,12 @@ import Donate from "./Donate/Donate";
 import Research from "./Newsletter/Research";
 import JoinVolunteer from "../components/JoinMember/JoinVolunteer";
 import JoinMember from "../components/JoinMember/JoinMember";
-
+import Refund from "../pages/Privacy/Refund";
 import Privacy from "../pages/Privacy/Privacy";
+import TnC from "../pages/Privacy/TnC";
+
 import jsonData from "../data/data.json";
+
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 
 function App() {
@@ -97,6 +100,9 @@ function App() {
             <Route path="/member_form" component={JoinMember} />
             <Route path="/volunteer_form" component={JoinVolunteer} />
             <Route path="/privacy_policy" component={Privacy} />
+            <Route path="/refund_policy" component={Refund} />
+            <Route path="/tnc" component={TnC} />
+
             <Route path="/donate" component={Donate} />
             <Route path="/members/life" component={LifeMembers} />
           </Switch>

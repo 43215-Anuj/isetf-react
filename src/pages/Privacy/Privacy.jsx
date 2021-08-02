@@ -1,39 +1,9 @@
 import React from "react";
-import { Container, Row } from "reactstrap";
-
+import { Container } from "reactstrap";
+import Footer from '../../components/Footer/Footer';
 const Privacy = () => {
   return (
-    <div id="instructions" style={{ padding: '4rem 0'}}>
-      <Container className="container_section">
-        <Row>
-          <h4>Accuracy of Information</h4>
-          <p>
-            This website has been compiled in good faith by ISET Foundation, but
-            no representation is made or warranty given (either express or
-            implied) as to the completeness or accuracy of the information it
-            contains. No representations, warranties or guarantees whatsoever
-            are made as to the accuracy, adequacy, reliability, completeness,
-            suitability or applicability of the information to a particular
-            situation. Care has been taken in the compilation of this website.
-            The statements contained on this site are believed to be correct.
-            However, ISET Foundation, shall not be liable for any loss, damage
-            or inconvenience arising from inaccuracies. By accessing this
-            website, you agree that ISET Foundation will not be liable for any
-            direct or indirect loss arising from the use of the information and
-            the material contained in this website.
-          </p>
-          <p>
-            Site Content: Any information browsed, downloaded or otherwise
-            obtained through the use of this site is done at your own discretion
-            and risk. Although ISET Foundation takes full precaution and care
-            against viruses in the content present or sent through the website,
-            ISET Foundation, does not warrant that this site, its servers, or
-            any mail sent from ISET Foundation, will not have viruses or harmful
-            components. It will not be the responsibility of ISET Foundation, if
-            any damage is caused to user’s computer system or any losses occur.
-          </p>
-        </Row>
-      </Container>
+    <div id="instructions" style={{ padding: "4rem 0" }}>
       <Container className="container_section">
         <h4>Privacy Policy</h4>
         <h6>Information Gathering</h6>
@@ -170,54 +140,8 @@ const Privacy = () => {
           2. If you have any questions at all about ISET Foundation privacy
           policy, please write to us at: avianforindia@gmail.com
         </p>
-        <h4>Refund and Cancellation Policy</h4>
-        Welcome to this web-site of ISET Foundation. We make public our policy
-        on refund and cancellation of donations received for the social cause on
-        payment gateway as under:-
-        <p>
-          1. No refund/cancellation for the donated amount by any donor will not
-          be entertained, the online donations through the online payment
-          gateway.
-        </p>
-        <p>2. No cash or refund of money will be allowed.</p>
-        <p>
-          3. If any in-kind support received by the donor from any where the
-          material will be reached to the poorest of the poorer communities.
-        </p>
-        <p>
-          4. Once received the donation for a cause will not be refunded to the
-          donor. No cancellation to be made. The donation will be used for the
-          community development, children education or women’s empowerment.
-        </p>
-        <h4>Terms and Conditions</h4>
-        <p>
-          Use of this site is provided by ISET Foundation subject to the
-          following Terms and Conditions:
-        </p>
-        <p>
-          ISET Foundation reserves the rights to change these terms and
-          conditions at any time by posting changes online. Your continued use
-          of this site after changes are posted constitutes your acceptance of
-          this agreement as modified. You agree to use this site only for lawful
-          purposes, and in a manner which does not infringe the rights, or
-          restrict, or inhibit the use and enjoyment of the site by any third
-          party.
-        </p>
-        <p>
-          This site and the information, names, images, pictures, logos
-          regarding or relating to ISET Foundation are provided “as is” without
-          any representation or endorsement made and without warranty of any
-          kind whether express or implied. In no event will ISET Foundation be
-          liable for any damages including, without limitation, indirect or
-          consequential damages, or any damages whatsoever arising from the use
-          or in connection with such use or loss of use of the site, whether in
-          contract or in negligence. ISET Foundation does not warrant that the
-          functions contained in the material contained in this site will be
-          uninterrupted or error free, that defects will be corrected, or that
-          this site or the server that makes it available are free of viruses or
-          bugs or represents the full functionality, accuracy and reliability of
-          the materials.
-        </p>
+
+        
         <h4>Copyright restrictions:</h4>
         <p>
           Commercial use or publication of all or any item displayed is strictly
@@ -244,7 +168,34 @@ const Privacy = () => {
           are accessible through any websites owned or operated by third
           parties.
         </p>
+        <h4>Accuracy of Information</h4>
+        <p>
+          This website has been compiled in good faith by ISET Foundation, but
+          no representation is made or warranty given (either express or
+          implied) as to the completeness or accuracy of the information it
+          contains. No representations, warranties or guarantees whatsoever are
+          made as to the accuracy, adequacy, reliability, completeness,
+          suitability or applicability of the information to a particular
+          situation. Care has been taken in the compilation of this website. The
+          statements contained on this site are believed to be correct. However,
+          ISET Foundation, shall not be liable for any loss, damage or
+          inconvenience arising from inaccuracies. By accessing this website,
+          you agree that ISET Foundation will not be liable for any direct or
+          indirect loss arising from the use of the information and the material
+          contained in this website.
+        </p>
+        <p>
+          Site Content: Any information browsed, downloaded or otherwise
+          obtained through the use of this site is done at your own discretion
+          and risk. Although ISET Foundation takes full precaution and care
+          against viruses in the content present or sent through the website,
+          ISET Foundation, does not warrant that this site, its servers, or any
+          mail sent from ISET Foundation, will not have viruses or harmful
+          components. It will not be the responsibility of ISET Foundation, if
+          any damage is caused to user’s computer system or any losses occur.
+        </p>
       </Container>
+      <Footer />
     </div>
   );
 };

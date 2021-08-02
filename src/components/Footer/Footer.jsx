@@ -106,8 +106,10 @@ const Footer = () => {
         </Row>
       </Container>
       <Row className="contribution">
-        <Col lg="4" sm='12'>
-            <Link to='/privacy_policy'>PRIVACY POLICY</Link>
+        <Col className="tnc" lg="4" sm='12'>
+            <Link to='/privacy_policy'>Privacy Policy</Link>
+            <Link to='/refund_policy'>Refund Policy</Link>
+            <Link to='/tnc'>Terms & Cond.</Link>
         </Col>
         <Col lg="8" sm='12'>    
           © 2021 All Right Reserved, ISET Foundation. Coded by
