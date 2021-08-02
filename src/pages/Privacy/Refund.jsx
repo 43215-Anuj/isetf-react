@@ -3,8 +3,8 @@ import { Container, Row } from "reactstrap";
 import Footer from "../../components/Footer/Footer";
 const Refund = () => {
   return (
-    <div id="instructions" style={{ padding: "4rem 0" }}>
-      <Container className="container_section">
+    <div id="instructions">
+      <Container className="container_section" style={{ padding: "4rem 0" }}>
         <Row>
           <h4>Refund and Cancellation Policy</h4>
           Welcome to this web-site of ISET Foundation. We make public our policy
