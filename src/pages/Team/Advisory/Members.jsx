@@ -6,8 +6,6 @@ import { Container, Row, Col, Card, CardBody, CardHeader,
     Button, Modal, ModalHeader, ModalBody, ModalFooter  } from 'reactstrap';
 
 const Members = (props) => {
-
-    
     const [ modal, setModal ] = useState({
         state: false,
         name: "",

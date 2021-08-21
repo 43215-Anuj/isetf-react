@@ -9,7 +9,7 @@ import Founders from "./Team/Founder/Founder";
 import Exe from "./Team/Executive/Executives";
 import Advisory from "./Team/Advisory/Members";
 import VolunteersName from "./Volunteers/List/Volunteers";
-
+import Events from "./EventsPic/Events";
 import LifeMembers from "./Members/Life/Life";
 import AssociateMembers from "./Members/Associate/Associate";
 
@@ -91,7 +91,7 @@ function App() {
                 />
               )}
             />
-
+            <Route path="/field_events" component={Events} />
             <Route path="/events/covid_drawing" component={Drawing} />
             <Route path="/media_featured" component={MediaFeatured} />
             <Route path="/members/associate" component={AssociateMembers} />

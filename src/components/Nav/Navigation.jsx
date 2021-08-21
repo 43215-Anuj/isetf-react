@@ -83,7 +83,7 @@ const Navigation = () => {
                     tag={Link}
                     onClick={() => setIsOpen(!isOpen)}
                     to={{
-                      pathname: "/volunteer_form"
+                      pathname: "/volunteer_form",
                     }}
                   >
                     JOIN AS VOLUNTEER
@@ -106,7 +106,7 @@ const Navigation = () => {
                     tag={Link}
                     onClick={() => setIsOpen(!isOpen)}
                     to={{
-                      pathname: "/member_form"
+                      pathname: "/member_form",
                     }}
                   >
                     JOIN AS MEMBERS
@@ -132,7 +132,13 @@ const Navigation = () => {
                   EVENTS
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>PHOTOS</DropdownItem>
+                  <DropdownItem
+                    tag={Link}
+                    onClick={() => setIsOpen(!isOpen)}
+                    to="/field_events"
+                  >
+                    FIELD EVENTS
+                  </DropdownItem>
                   <DropdownItem
                     tag={Link}
                     onClick={() => setIsOpen(!isOpen)}

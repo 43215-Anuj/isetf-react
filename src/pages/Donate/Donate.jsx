@@ -7,8 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGooglePay } from "@fortawesome/free-brands-svg-icons";
 import PhonePay from "../../assets/img/icons/phone-pe.png";
 // import axios from "axios";
-import event1 from "../../assets/img/events/event9.jpg";
-import event2 from "../../assets/img/events/awarefarmers.jpg";
+import event1 from "../../assets/img/events/15.jpg";
+import event2 from "../../assets/img/events/1.jpg";
 import logo from "../../assets/img/logos/logocircle.png";
 
 const Donate = () => {

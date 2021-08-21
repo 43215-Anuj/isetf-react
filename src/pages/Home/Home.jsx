@@ -36,7 +36,7 @@ import mf8 from "../../assets/img/media/ph1.jpg";
 import mf9 from "../../assets/img/media/pi1.jpg";
 import mf10 from "../../assets/img/media/pj1.jpg";
 
-import event1 from "../../assets/img/events/event8.jpg";
+import event1 from "../../assets/img/events/15.jpg";
 import WifiTetheringIcon from "@material-ui/icons/WifiTethering";
 import LocalFloristIcon from "@material-ui/icons/LocalFlorist";
 import EcoIcon from "@material-ui/icons/Eco";
@@ -415,7 +415,7 @@ const Home = () => {
             <Col lg="4" sm="12">
               <div
                 className="fb-page"
-                data-href="https://www.facebook.com/isetfoundation"
+                data-href="https//www.facebook.com/isetfoundation"
                 data-tabs="timeline"
                 data-width=""
                 data-height=""
@@ -431,10 +431,10 @@ const Home = () => {
                 data-aos-anchor-placement="top-center"
               >
                 <blockquote
-                  cite="https://www.facebook.com/isetfoundation"
+                  cite="https//www.facebook.com/isetfoundation"
                   className="fb-xfbml-parse-ignore"
                 >
-                  <a href="https://www.facebook.com/isetfoundation">Facebook</a>
+                  <a href="https//www.facebook.com/isetfoundation">Facebook</a>
                 </blockquote>
               </div>
             </Col>
