@@ -1,8 +1,6 @@
 {
     "Founders": [
         {
-            "id": "1",
-            "class": "even",
             "name": "Dr. Sandeep Kumar Singh",
             "desg": "Founder President",
             "imgSrc": "founder",
@@ -25,8 +23,6 @@
             ] 
         },
         {
-            "id": "2",
-            "class": "odd",
             "name": "Mr. Shailendra K. Mishra",
             "desg": "Co-founder, Lucknow, India",
             "imgSrc": "cofounder",
@@ -45,8 +41,6 @@
 
     "Executives": [
         {
-            "id": "0",
-            "class": "even",
             "name": "Mr. Yogendra Kumar Mishra",
             "desg": "Lucknow, India",
             "imgSrc": "yogendra",
@@ -59,8 +53,6 @@
             ]
         },
         {
-            "id": "1",
-            "class": "odd",
             "name": "Mrs. Ritu Singh",
             "desg": "Lucknow, India",
             "imgSrc": "ritu",
@@ -71,8 +63,6 @@
             ]
         },
         {
-            "id": "2",
-            "class": "even",
             "name": "Mr. Suraj Singh",
             "desg": "Lucknow, India",
             "imgSrc": "suraj",
@@ -83,8 +73,6 @@
             ]
         },
         {
-            "id": "3",
-            "class": "odd",
             "name": "Mr. Manoj Kumar Singh",
             "desg": "Lucknow, India",
             "imgSrc": "manoj",
@@ -93,8 +81,6 @@
             ]
         },
         {
-            "id": "4",
-            "class": "even",
             "name": "Mr. Mahendra Pratap Singh",
             "desg": "Lucknow, India",
             "imgSrc": "mahendra",
@@ -103,8 +89,6 @@
             ]
         },
         {
-            "id": "5",
-            "class": "odd",
             "name": "Mr. Deepak Kumar Singh",
             "desg": "Lucknow, India",
             "imgSrc": "deepak",
@@ -113,8 +97,6 @@
             ]
         },
         {
-            "id": "6",
-            "class": "even",
             "name": "Mr. Manoj Swatantra",
             "desg": "Lucknow, India",
             "imgSrc": "manojs",
@@ -123,8 +105,6 @@
             ]
         },
         {
-            "id": "7",
-            "class": "odd",
             "name": "Mr. Ashok Kumar Singh",
             "desg": "Lucknow, India",
             "imgSrc": "ashok",
@@ -136,8 +116,6 @@
 
     "Advisory": [
         {
-            "id": "0",
-            "class": "even",
             "name": "Prof. George Perry",
             "desg": "Neuroscientist, Professor, UTSA, Texas, USA",
             "imgSrc": "george", 
@@ -148,8 +126,6 @@
             ]
         },
         {
-            "id": "1",
-            "class": "odd",
             "name": "Gitta Peyn",
             "imgSrc": "gitta",
             "desg": "Co-founder of the FORMWELTen-Institute, Germany",
@@ -169,8 +145,6 @@
             ]
         },
         {
-            "id": "2",
-            "class": "even",
             "name": "Prof. Maria Tikhonova",
             "imgSrc": "nova",
             "desg": "Head of the Laboratory, Laboratory of the Experimental Models of Neurodegenerative Processes, Federal State Budgetary Scientific Institution “Scientific Research Institute of Physiology and Basic Medicine” (SRIPhBM), Novosibirsk, Russia",
@@ -186,20 +160,16 @@
             ]
         },
         {
-            "id": "3",
-            "class": "odd",
             "name": "Prof. Ashley Bush",
             "imgSrc": "ashley",
             "desg": "Professor at the University of Melbourne and the Director of the Melbourne Dementia Research Centre at The Florey Institute of Neuroscience & Mental Health",
             "desc": [
                 "Professor Ashley Bush is Professor of Neuroscience and Psychiatry at the University of Melbourne and the Director of the Melbourne Dementia Research Centre at The Florey Institute of Neuroscience & Mental Health.",
 
-                "He is Co-Director of Biomarker Development for The Australian Imaging, Biomarkers and Lifestyle Study of Ageing (AIBL), Deputy Chair of the MACH Care of the Ageing Network, and holds staff appointments in Psychiatry and Radiology at Massachusetts General Hospital, USA. He is the scientific founder of multiple biotechnology companies such as Cogstate Ltd and Collaborative Medicinal Development. He has over 450 publications, >45,000 citations, a h-index of 102, and 29 patents. Prof Bush is rated in the top 1% of neuroscience researchers worldwide for high impact citations (2014-2016, 2018, 2019), and classed as one of the World's Most Influential Scientific Minds by Clarivate Analytics. Personalized medicine is an emphasis of much of Prof. Bush’s neurodegenerative disease research involving fluid biomarkers, multimodal neuroimaging and neurogenetics in population cohorts such as the Rush Memory and Aging Project, the Swedish BioFinder project, the Alzheimer’s disease Neuroimaging Initiative, the Healthy Brain Project, and AIBL."
+                "He is Co-Director of Biomarker Development for The Australian Imaging, Biomarkers and Lifestyle Study of Ageing (AIBL), Deputy Chair of the MACH Care of the Ageing Network, and holds staff appointments in Psychiatry and Radiology at Massachusetts General Hospital, USA. He is the scientific founder of multiple biotechnology companies such as Cogstate Ltd and Collaborative Medicinal Development. He has over 450 publications, >45,000 citations, a h-index of 102, and 29 patents. Prof Bush is rated in the top 1% of neuroscience researchers worldwide for han emphasis of much of Prof. Bush’s neurodegenerative disease research involving fluid biomarkers, multimodal neuroimaging and neurogenetics in population cohorts such as the Rush Memory and Aging Project, the Swedish BioFinder project, the Alzheimer’s disease Neuroimaging Initiative, the Healthy Brain Project, and AIBL."
             ]
         },
         {
-            "id": "4",
-            "class": "even",
             "name": "Soraya L. Valles, PhD",
             "imgSrc": "valles",
             "desg": "Professor at department of Physiology and Lab chief of Pathology, School of Medicine, University of Valencia, Spain",
@@ -210,8 +180,6 @@
             ]
         },
         {
-            "id": "5",
-            "class": "odd",
             "name": "Prof. Atanas Atanasov",
             "imgSrc": "atanas",
             "desg": "Professor and Head, Institute of Genetics and Animal Breeding of the Polish Academy of Sciences, Jastrzebiec, Poland",
@@ -222,8 +190,6 @@
             ]
         },
         {
-            "id": "6",
-            "class": "even",
             "name": "Dr. Aamir Nazir",
             "imgSrc": "aamir",
             "desg": "Senior Scientist, CDRI, Lucknow, India",
@@ -234,8 +200,6 @@
             ]
         },
         {
-            "id": "7",
-            "class": "odd",
             "name": "Prof. A. Vaishampayan",
             "imgSrc": "vaishampayan",
             "desg": "Emeritus Professor & Vice-Chairman, Institute of Agricultural Sciences, Banaras Hindu University, India",
@@ -259,8 +223,18 @@
             ]
         },
         {
-            "id": "8",
-            "class": "even",
+            "name": "Dr Michael Baron",
+            "imgSrc": "baron",
+            "desg": "Project Manager and Strategy Consultant",
+            "desc": [
+                "Dr Michael Baron has over 20 years of Experience in Project Management and Strategy Consulting as well as Managing, Developing and Delivering both Postgraduate and Undergraduate Universities Programs.",
+
+                "His books and articles cover a wide range of business, technology, higher education and educational policy-related areas and have been published not only in Australia but also in Singapore, China, Russia, Germany and the UK. He has been lecturing MBA and MIS students at some of the leading Australian Universities. In 2013, he was voted by the students of the Charles Sturt University as the University’s #1 Lecturer, narrowly missing the list of Top 10 Australian Lecturers",
+                
+                "In 1997, he founded Baron Consulting (www.baronconsulting.com.au) - one of Australia's leading Business Consulting, Recruitment & Training Agencies. The consulting, recruitment and training services are currently available in Australia (Melbourne and Sydney), China, Singapore and New Zealand."
+            ]
+        },
+        {
             "name": "Dr. Manu K. Vora",
             "imgSrc": "manuvora",
             "desg": "Chairman and President of Business Excellence, Inc., USA, a global quality management consulting firm.",
@@ -275,8 +249,6 @@
             ]
         },
         {
-            "id": "9",
-            "class": "odd",
             "name": "Mr. Sanjay Singh",
             "imgSrc": "sanjay",
             "desg": "Manager, Tommy Hilfiger, Ahmedabad, India",
@@ -285,8 +257,6 @@
             ]
         },
         {
-            "id": "10",
-            "class": "even",
             "name": "Prof. Sureshprasad Singh",
             "imgSrc": "sureshprasad",
             "desg": "Former V.C. of VKS University, Ara Bihar and Himalayan University Itanagar, AP., India",
@@ -298,18 +268,14 @@
             ]
         },
         {
-            "id": "11",
-            "class": "odd",
             "name": "Prof. Sankar Prasad Mukherjee",
             "imgSrc": "sankar",
             "desg": "Emeritus Professor & Chairman (IQAC), Hooghly Engineering & Technology College; Member Secy., HETCS.",
             "desc": [
-                "Prof. (Dr.) Sankar Prasad Mukherjee, M.Sc.(1); B.Ed.(1) Ph.D in Applied Mathematics from I.S.M. (I.I.T., Dhanbad) is presently Research Guide of Ph.D Fellows of Seacom Skills University, Santiniketan (W.B) and also an honorary Sr. Visiting Professor and Member, Board of Research Studies, of the University. Dr. Mukherjee is Emeritus Professor of HETC (W.B). Dr. Mukherjee was Prof. and Dean in B.I.T.M. (W.B) as well as in S.K.F.G.I. (W.B); Sr. Faculty (ICWAI); Faculty University Entrance class at B.U. (W.B). He had an Industrial experience of about 20 years in Sr. Administrative level in various department like R & D ; Statistical and planning; Environment Pollution etc. in E.C.L (CIL). He was Research Fellows at N.C.E.R.T. and IIT (Dhanbad) with comprehensive Research Experience. He had to his credit Research Publication in International Journals like Acoustical Society of America (American Institute of Physics); J.of Nonlinear Mechanics (Elsevier), Masachusetts; Acta Geophysica Polonica (Polish Academy of Sciences); J.Geophysical Reasurch Bulletin – CISR; J. Rommania; Rev. Roum (Technical Sciences of Romanian Academy; J. of Mathematical Analysis an applications, Alexendria (Elsevier) MAT Journals etc. He acted as an expert in NCERT’S new curriculum in 1990; Ph.D adjudicator of Madras University and in various organisations. Life Member, ISCA, Calcutta Mathematical Society; IIFS;IISA; Advisor (Academic & Research), Weaving Dreams; Presidentium, Int. Conf. of Env & Ecology. He was awarded by “BHARAT GOURAV”; “BEST CITIZENS OF INDIA”; “Glory of India Gold Medal”; “Bharat Ratna Dr. A.P.J. Abdul Kalam Excellance award”; “Swami Vivekananda Excellence award”; “Priyadarshini Indira Gandhi Excellence Award”; Three Life time achievement award by I.F.E.E., Association of world peace and Conf. of Indian Universities etc"
+                "Prof. (Dr.) Sankar Prasad Mukherjee, M.Sc.(1); B.Ed.(1) Ph.D in Applied Mathematics from I.S.M. (I.I.T., Dhanbad) is presently Research Guide of Ph.D Fellows of Seacom Skills University, Santiniketan (W.B) and also an honorary Sr. Visiting Professor and Member, Board of Research Studies, of the University. Dr. Mukherjee is Emeritus Professor of HETC (W.B). Dr. Mukherjee was Prof. and Deanin Sr. Administrative level in various department like R & D ; Statistical and planning; Environment Pollution etc. in E.C.L (CIL). He was Research Fellows at N.C.E.R.T. and IIT (Dhanbad) with comprehensive Research Experience. He had to his credit Research Publication in International Journals like Acoustical Society of America (American Institute of Physics); J.of Nonlinear Mechanics (Elsevier), Masachusetts; Acta Geophysica Polonica (Polish Academy of Sciences); J.Geophysical Reasurch Bulletin – CISR; J. Rommania; Rev. Roum (Technical Sciences of Romanian Academy; J. of Mathematical Analysis an applications, Alexendria (Elsevier) MAT Journals etc. He acted as an expert in NCERT’S new curriculum in 1990; Ph.D adjudicator of Madras University and in various organisations. Life Member, ISCA, Calcutta Mathematical Society; IIFS;IISA; Advisor (Academic & Research), Weaving Dreams; Presidentium, Int. Conf. of Env & Ecology. He was awarded by “BHARAT GOURAV”; “BEST CITIZENS OF INDIA”; “Glory of India Gold Medal”; “Bharat Ratna Dr. A.P.J. Abdul Kalam Excellance award”; “Swami Vivekananda Excellence award”; “Priyadarshini Indira Gandhi Excellence Award”; Three Life time achievement award by I.F.E.E., Association of world peace and Conf. of Indian Universities etc"
             ]
         },
         {
-            "id": "12",
-            "class": "even",
             "name": "Prof. Bonnie Zare",
             "imgSrc": "zare",
             "desg": "Associate Professor",
@@ -318,8 +284,6 @@
             ]
         },
         {
-            "id": "13",
-            "class": "odd",
             "name": "Mónica Rodrigues",
             "imgSrc": "monica",
             "desg": "Specialist in Psychopedagogy and Consultant at mindflow",
@@ -328,20 +292,16 @@
             ]
         },
         {
-            "id": "14",
-            "class": "even",
             "name": "Corina Sujdea",
             "imgSrc": "corina",
             "desg": "Member of Community Enterprise and women Development Organization",
             "desc": [
                 "My name is Corina Sujdea is a school teacher and I am a member of Community Enterprise and women Development Organization since last one year. I always support CEWDO and contribute in its activities, and I am a good organizer responsible for the structure reforms and changes and I had worked in this capacity from 1999 - 2007. I am very friendly and very diligently and professionally discharge job's assignments. I have a Post High School Teachers diplomas and experience to teach PSYCONAS, Vaslui (Romania). I have studied Romanian, mathematics, science, history, geography, art, psychology and pedagogy. I am a good command in English speaking. I have skills of team spirit, good communication skills, and the spirit of solidarity. These skills have been acquired through training, seminars, context professional, voluntarily or leisure and extra curriculum activities.", 
                 
-                "I have an open relationship of collaboration with the school principal and my colleagues, and I am a member of an NGO, called VATRA STRAMOSEASCA. I have worked on a number of international projects (ISA), as a partner, also I am Erasmus + coordinator of 3 projects in European countries and Turkey. I also work as a partner with colleagues from India, Nepal, Egypt, Yemen, Morroco and Pakistan for ISA. To this end we have developed with the many activities on various topics, and I even had many skype sessions. I often use the computer in the classroom teaching and my students are delighted in turn to use modern technology in education. Now a days, due to covid 19, I use zoom and google classroom, also different tools. Last school year I was appointed head of the Commission of the method of my school, member of the school board, and also part of the team coordinating and organizing a nationwide math contest. I have an extensive experience of managerial/organizational work."
+                "I have an open relationship of collaboration with the school principal and my colleagues, and I am a member of an NGO, called VATRA STRAMOSEASCA. I have worked on a number of international projects (ISA), as a partner, also I am Erasmus + coordinator of 3 projects in European countries and Turkey. I also work as a partner with colleagues from India, Nepal, Egypt, Yemen, Morroco and Pakistan year I was appointed head of the Commission of the method of my school, member of the school board, and also part of the team coordinating and organizing a nationwide math contest. I have an extensive experience of managerial/organizational work."
             ]
         },
         {
-            "id": "15",
-            "class": "odd",
             "name": "Prof. Maria José Sousa",
             "imgSrc": "maria",
             "desg": "Ph.D. in Industrial Management",
@@ -354,8 +314,6 @@
             ]
         },
         {
-            "id": "25",
-            "class": "odd",
             "name": "Mr. Darsanam Surender",
             "imgSrc": "darsanam",
             "desg": "",
@@ -364,8 +322,6 @@
             ]
         },
         {
-            "id": "16",
-            "class": "even",
             "name": "Dr. Anil Kumar Singh",
             "imgSrc": "anil",
             "desg": "Assistant Professor, SMM Town PG College, Ballia, India",
@@ -378,8 +334,6 @@
             ]
         },
         {
-            "id": "17",
-            "class": "odd",
             "name": "Dr. Amit Singh",
             "imgSrc": "amit",
             "desg": "Senior Resident at Department of Microbiology, AIIMS, Bhopal",
@@ -396,8 +350,6 @@
             ]
         },
         {
-            "id": "18",
-            "class": "even",
             "name": "Dr. Ashok Kumar",
             "imgSrc": "dashok",
             "desg": "Professor, Department of Neuroscience/McKnight Brain Institute, Florida, USA",
@@ -408,8 +360,6 @@
             ]
         },
         {
-            "id": "19",
-            "class": "odd",
             "name": "Dr Siddharth Sonkar",
             "imgSrc": "sid",
             "desg": "Founder & Co-Director, NUS Life sciences Pvt. Ltd.",
@@ -420,8 +370,6 @@
             ]
         },
         {
-            "id": "20",
-            "class": "even",
             "name": "Dr Sarat Chandra Yenisetti",
             "imgSrc": "sarat",
             "desg": "Professor, Nagaland University, India",
@@ -430,8 +378,6 @@
             ]
         },
         {
-            "id": "21",
-            "class": "odd",
             "name": "Dr. Rajendra K. Singh",
             "imgSrc": "rajendra",
             "desg": "Quality Control Advisor, Vyaire Medical, USA",
@@ -445,8 +391,6 @@
             ]
         },
         {
-            "id": "22",
-            "class": "even",
             "name": "Dr. Piyoosh Babele",
             "imgSrc": "piyoosh",
             "desg": "Research Scientist, Vanderbilt University, TN, USA",
@@ -455,8 +399,6 @@
             ]
         },
         {
-            "id": "23",
-            "class": "odd",
             "name": "Dr. Ajay Kumar Singh",
             "imgSrc": "ajay",
             "desg": "Principal Scientist & Head R&D, AG Bio Systems Private Limited, Telangana, Hyderabad",
@@ -467,8 +409,6 @@
             ]
         },
         {
-            "id": "24",
-            "class": "even",
             "name": "Dr. Ramendra Sundar Dey",
             "imgSrc": "ramendra",
             "desg": "Scientist at Institute of Nano Science and Technology, Mohali, India",
