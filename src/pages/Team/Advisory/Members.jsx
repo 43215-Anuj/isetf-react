@@ -32,6 +32,7 @@ const Members = (props) => {
       desc: advisor.desc,
     });
 
+    console.log(modal.desc)
   return (
     <div>
       <BannerHeading title="Advisory Members" />
@@ -65,7 +66,11 @@ const Members = (props) => {
               <ModalHeader>
                 {modal.name} - {modal.desg}
               </ModalHeader>
-              <ModalBody>{modal.desc}</ModalBody>
+              <ModalBody>{modal.desc && modal.desc.map((para) => {
+                return (
+                  <p>{para}</p>
+                )
+              })}</ModalBody>
               <ModalFooter>
                 <Button color="primary" onClick={() => setModal(false)}>
                   Cancel
