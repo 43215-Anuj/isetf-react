@@ -46,6 +46,16 @@ const Navigation = () => {
                   ABOUT
                 </NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink
+                  exact
+                  to="/services"
+                  activeClassName="active"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  SERVICES
+                </NavLink>
+              </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   TEAM

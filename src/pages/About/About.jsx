@@ -64,6 +64,7 @@ const About = () => {
                 data-aos-mirror="true"
                 data-aos-once="true"
                 data-aos-anchor-placement="top-center"
+                style={{ minHeight: 800 }}
               >
                 <h3>
                   Our Moto: Science of today is the technology of tomorrow
@@ -80,6 +81,7 @@ const About = () => {
             </Col>
             <Col lg="4">
               <div
+                style={{ minHeight: 800 }}
                 className="ab-card"
                 data-aos="zoom-in-down"
                 data-aos-delay="50"
@@ -114,6 +116,7 @@ const About = () => {
             </Col>
             <Col lg="4">
               <div
+                style={{ minHeight: 800 }}
                 className="ab-card"
                 data-aos="fade-left"
                 data-aos-delay="50"

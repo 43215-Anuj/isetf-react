@@ -4,6 +4,7 @@ import "./App.scss";
 import Layout from "../hoc/Layout";
 import Home from "./Home/Home";
 import About from "./About/About";
+import Services from "./Services/Services";
 //Team
 import Founders from "./Team/Founder/Founder";
 import Exe from "./Team/Executive/Executives";
@@ -68,7 +69,8 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
-
+            <Route path="/services" component={Services} />
+            
             <Route
               path="/team/founder"
               render={() => <Founders data={jsonData.Founders} />}
