@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Team.scss";
 import Footer from "../../../components/Footer/Footer";
 import BannerHeading from "../../../components/BannerHeading/Banner";
@@ -9,30 +9,10 @@ import {
   Card,
   CardBody,
   CardHeader,
-  Button,
-  Modal,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
 } from "reactstrap";
+import { Link } from "react-router-dom";
 
 const Members = (props) => {
-  const [modal, setModal] = useState({
-    state: false,
-    name: "",
-    desg: "",
-    desc: "",
-  });
-
-  const toggle = (advisor) =>
-    setModal({
-      state: !modal.state,
-      name: advisor.name,
-      desg: advisor.desg,
-      desc: advisor.desc,
-    });
-
-    console.log(modal.desc)
   return (
     <div>
       <BannerHeading title="Advisory Members" />
@@ -43,7 +23,7 @@ const Members = (props) => {
               return (
                 <Col className="advisory-card" key={index} lg="3">
                   <Card outline color="primary">
-                    <CardBody onClick={() => toggle(advisor)}>
+                    <CardBody>
                       <img
                         src={
                           require(`../../../assets/img/members/${advisor.imgSrc}.jpg`)
@@ -51,32 +31,16 @@ const Members = (props) => {
                         }
                         alt={advisor.name}
                       />
-                      <CardHeader tag="h5">{advisor.name}</CardHeader>
+                      <Link
+                        to={`/team/advisory/${advisor.id}`}
+                      >
+                        <CardHeader tag="h5">{advisor.name}</CardHeader>
+                      </Link>
                     </CardBody>
                   </Card>
                 </Col>
               );
             })}
-            <Modal
-              isOpen={modal.state}
-              toggle={toggle}
-              className={modal.name}
-              size="lg"
-            >
-              <ModalHeader>
-                {modal.name} - {modal.desg}
-              </ModalHeader>
-              <ModalBody>{modal.desc && modal.desc.map((para) => {
-                return (
-                  <p>{para}</p>
-                )
-              })}</ModalBody>
-              <ModalFooter>
-                <Button color="primary" onClick={() => setModal(false)}>
-                  Cancel
-                </Button>
-              </ModalFooter>
-            </Modal>
           </Row>
         </Container>
       </section>

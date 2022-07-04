@@ -9,6 +9,8 @@ import Services from "./Services/Services";
 import Founders from "./Team/Founder/Founder";
 import Exe from "./Team/Executive/Executives";
 import Advisory from "./Team/Advisory/Members";
+import SingleMember from "./Team/Advisory/SingleMember";
+
 import VolunteersName from "./Volunteers/List/Volunteers";
 import Events from "./EventsPic/Events";
 import LifeMembers from "./Members/Life/Life";
@@ -70,7 +72,7 @@ function App() {
             <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/services" component={Services} />
-            
+
             <Route
               path="/team/founder"
               render={() => <Founders data={jsonData.Founders} />}
@@ -80,10 +82,13 @@ function App() {
               render={() => <Exe data={jsonData.Executives} />}
             />
             <Route
+              path="/team/advisory/:id"
+              render={() => <SingleMember data={jsonData.Advisory} />}
+            />
+            <Route
               path="/team/advisory"
               render={() => <Advisory data={jsonData.Advisory} />}
             />
-
             <Route
               path="/volunteers"
               render={() => (
