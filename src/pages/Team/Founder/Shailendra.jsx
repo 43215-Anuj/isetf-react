@@ -9,7 +9,7 @@ import { faFacebook , faLinkedin, faOrcid,
          faResearchgate, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 
-const Founder = (props) => {
+const Shailendra = (props) => {
     return (
         <div>
             <BannerHeading title="Who Behind The Mission" />
@@ -17,6 +17,7 @@ const Founder = (props) => {
                 <Container>
                     <Row>
                         {props.data.map((Founder, index) => {
+                            if (Founder.id === "shailendra_mishra")
                             return (
                                 <div key={index} className={`founder-${props.class} member-card`}>
                                     <Row className="mem-card-head">
@@ -75,4 +76,4 @@ const Founder = (props) => {
     )
 }
 
-export default Founder
+export default Shailendra

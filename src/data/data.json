@@ -1,6 +1,7 @@
 {
     "Founders": [
         {
+            "id": "sandeep_singh",
             "name": "Dr. Sandeep Kumar Singh",
             "desg": "Founder President",
             "imgSrc": "founder",
@@ -23,6 +24,7 @@
             ] 
         },
         {
+            "id": "shailendra_mishra",
             "name": "Mr. Shailendra K. Mishra",
             "desg": "Co-founder, Lucknow, India",
             "imgSrc": "cofounder",
@@ -38,7 +40,7 @@
             ]
         }
     ],
-
+    
     "Executives": [
         {
             "name": "Mr. Yogendra Kumar Mishra",
@@ -113,7 +115,7 @@
             ]
         }
     ],
-
+    
     "Advisory": [
         {
             "id": "001",

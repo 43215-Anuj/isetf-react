@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.scss";
-import Layout from "../hoc/Layout";
 import Home from "./Home/Home";
 import About from "./About/About";
+import Layout from "../hoc/Layout";
 import Services from "./Services/Services";
 //Team
-import Founders from "./Team/Founder/Founder";
+import Sandeep from "./Team/Founder/Sandeep";
+import Shailendra from "./Team/Founder/Shailendra";
+
 import Exe from "./Team/Executive/Executives";
 import Advisory from "./Team/Advisory/Members";
 import SingleMember from "./Team/Advisory/SingleMember";
@@ -72,10 +74,13 @@ function App() {
             <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/services" component={Services} />
-
             <Route
-              path="/team/founder"
-              render={() => <Founders data={jsonData.Founders} />}
+              path="/sandeep_singh"
+              render={() => <Sandeep data={jsonData.Founders} />}
+            />
+            <Route
+              path="/shailendra_mishra"
+              render={() => <Shailendra data={jsonData.Founders} />}
             />
             <Route
               path="/team/executives"

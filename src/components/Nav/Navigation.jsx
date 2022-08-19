@@ -61,13 +61,35 @@ const Navigation = () => {
                   TEAM
                 </DropdownToggle>
                 <DropdownMenu direction="right">
+                  <UncontrolledDropdown nav inNavbar>
+                    <DropdownToggle nav caret>
+                      WHO BEHIND THE MISSION
+                    </DropdownToggle>
+                    <DropdownMenu direction="right">
+                      <DropdownItem
+                        tag={Link}
+                        onClick={() => setIsOpen(!isOpen)}
+                        to="/sandeep_singh"
+                      >
+                        Sandeep Kumar Singh
+                      </DropdownItem>
+                      <DropdownItem
+                        tag={Link}
+                        onClick={() => setIsOpen(!isOpen)}
+                        to="/sandeep_singh"
+                      >
+                        Shailendra K Mishra
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
+                  {/* 
                   <DropdownItem
                     tag={Link}
                     onClick={() => setIsOpen(!isOpen)}
                     to="/team/founder"
                   >
                     WHO BEHIND THE MISSION
-                  </DropdownItem>
+                  </DropdownItem>*/}
                   <DropdownItem
                     tag={Link}
                     onClick={() => setIsOpen(!isOpen)}
