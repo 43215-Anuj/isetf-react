@@ -76,7 +76,7 @@ const Navigation = () => {
                       <DropdownItem
                         tag={Link}
                         onClick={() => setIsOpen(!isOpen)}
-                        to="/sandeep_singh"
+                        to="/shailendra_mishra"
                       >
                         Shailendra K Mishra
                       </DropdownItem>
