@@ -104,6 +104,7 @@
       ]
     }
   ],
+  "current_AdvisoryCount": 35,
   "Advisory": [
     {
       "id": "001",
@@ -232,6 +233,16 @@
         "Dr Elena has Ph.D degree in biology with specification in molecular biology from the Engelhardt Institute of Molecular Biology of Russian Academic of Sciences, Moscow, Russia (laboratory of Lev L. Kisselev). Dr Paley research focuses mainly on the protein biosynthesis in biology and diseases - specifically cancer and neurodegeneration.",
         "She is an inventor in patents (in the field of neurodegeneration) issued and pending. She is a editor and reviewer in the scientific journals and funds.",
         "Dr Paley research is conducted and published in collaboration with Harvard University; Brandeis University; University of Miami, FL; Tel Aviv University, Israel; Vessels and blood Institute (Institut des Vaisseaux et du Sang), Paris, France; University of Texas at San Antonio. Dr. Paley is the adjunct professor and lecturer at the Nova Southeastern University, FL, USA."
+      ]
+    },
+    {
+      "id": "035",
+      "name": "Dr. Hung-Ming Chang",
+      "imgSrc": "hungming",
+      "desg": "Professor in the Department of Anatomy and Cell Biology, School of Medicine, College of Medicine at Taipei Medical University, Taiwan",
+      "desc": [
+        "Dr. Hung-Ming Chang is currently a professor in the Department of Anatomy and Cell Biology, School of Medicine, College of Medicine at Taipei Medical University, Taiwan. He is also the visiting committee of the Taiwan Medical Accreditation Council. Professor Chang graduated from the Department of Physical Therapy, National Taiwan University in 1995, and received his Ph.D. degree in 2001 from the Graduate School of Anatomy and Cell Biology, National Taiwan University. After working as a reserve officer of rehabilitation in Kaohsiung Armed Forces General Hospital for two years (2001~2003), Professor Chang went to the Department of Anatomy, Indiana University, USA, for serving as a guest researcher. He was then appointed as the Vice-Director of the School of Medicine, Chung-Shan Medical University until 2012, before taking up his current appointment.",
+        "Professor Chang’s main research interests lie in the field of neurodegenerative diseases, olfactory system, oral health, nanomedicine, and the therapeutic application of melatonin and other anti-oxidative agents. Professor Chang has authored more than 100 peer-reviewed articles in journals including Journal of Pineal Research, Chemical Engineering Journal, Journal of Gerontology – Biological Sciences, and Molecules."
       ]
     },
     {
