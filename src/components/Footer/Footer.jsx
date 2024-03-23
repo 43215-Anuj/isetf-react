@@ -39,12 +39,12 @@ const Footer = () => {
               </span>
               <span className="f-text">isetfoundation@gmail.com</span>
             </div>
-            <div className="contant-d">
+            {/* <div className="contant-d">
               <span>
                 <PhonelinkRingRoundedIcon />
               </span>
               <span className="f-text">+91 7985077353</span>
-            </div>
+            </div> */}
           </Col>
           <Col lg="3">
             <div className="center-fc" style={{ textAlign: "center" }}>
@@ -112,7 +112,7 @@ const Footer = () => {
             <Link to='/tnc'>Terms & Cond.</Link>
         </Col>
         <Col lg="6" sm='12'>    
-          © 2021 All Right Reserved, ISETF. Coded by
+          © 2021 All Right Reserved, ISETF. Developed by
           <a href="https://anujkumar.gtsb.io/" target="_blank" rel="noreferrer">
             {" "}
             Anuj Kumar.
