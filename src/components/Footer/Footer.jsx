@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 import LocationOnRoundedIcon from "@material-ui/icons/LocationOnRounded";
 import MailRoundedIcon from "@material-ui/icons/MailRounded";
-import PhonelinkRingRoundedIcon from "@material-ui/icons/PhonelinkRingRounded";
+// import PhonelinkRingRoundedIcon from "@material-ui/icons/PhonelinkRingRounded";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -106,12 +106,12 @@ const Footer = () => {
         </Row>
       </Container>
       <Row className="contribution">
-        <Col className="tnc" lg="6" sm='12'>
-            <Link to='/privacy_policy'>Privacy Policy</Link>
-            <Link to='/refund_policy'>Refund Policy</Link>
-            <Link to='/tnc'>Terms & Cond.</Link>
+        <Col className="tnc" lg="6" sm="12">
+          <Link to="/privacy_policy">Privacy Policy</Link>
+          <Link to="/refund_policy">Refund Policy</Link>
+          <Link to="/tnc">Terms & Cond.</Link>
         </Col>
-        <Col lg="6" sm='12'>    
+        <Col lg="6" sm="12">
           © 2021 All Right Reserved, ISETF. Developed by
           <a href="https://anujkumar.gtsb.io/" target="_blank" rel="noreferrer">
             {" "}
